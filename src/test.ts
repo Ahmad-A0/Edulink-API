@@ -30,11 +30,11 @@ const skipList: string[] = ['TeacherPhotos'];
 let [passed, failed] = [0, 0];
 
 (async () => {
-  const edulink: any = await Edulink_API(
-    process.env.EDULINK_SCHOOL_ID,
-    process.env.EDULINK_USERNAME,
-    process.env.EDULINK_PASSWORD
-  );
+  const edulink: any = await Edulink_API({
+    school_code: process.env.EDULINK_SCHOOL_ID,
+    username: process.env.EDULINK_USERNAME,
+    password: process.env.EDULINK_PASSWORD,
+  });
 
   for (const property of userFunctions(edulink)) {
     if (

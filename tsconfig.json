@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./build",
     "module": "ES2020",
-    "target": "ES5",
+    "target": "ES2020",
     "lib": ["ES2019", "ES2020.String", "DOM", "DOM.Iterable", "es2020"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
