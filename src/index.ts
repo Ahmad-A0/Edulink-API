@@ -1,11 +1,11 @@
-import Authentication from './Authentication_Requests/Authentication';
-import EduLink from './Edulink_Requests/Edulink';
+import Authentication from './Authentication_Requests/Authentication.js';
+import EduLink from './Edulink_Requests/Edulink.js';
 
 async function Edulink_API(
   school_code: string,
   username: string,
   password: string,
-  keepAlive: boolean = true
+  keepAlive: boolean = false
 ): Promise<EduLink> {
   const authInstance = new Authentication();
   await authInstance.initialize(school_code, username, password, keepAlive);
