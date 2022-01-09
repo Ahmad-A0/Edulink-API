@@ -8,20 +8,20 @@ import {
 } from '../Assorted_Tools/tools.js';
 
 import Authentication from '../Authentication_Requests/Authentication.js';
-import Edulink_Achievement from '../Types/Edulink_Achievement.js';
-import Edulink_AchievementBehaviourLookups from '../Types/Edulink_AchievementBehaviourLookups.js';
-import Edulink_Attendance from '../Types/Edulink_Attendance.js';
-import Edulink_Behaviour from '../Types/Edulink_Behaviour.js';
-import Edulink_Catering from '../Types/Edulink_Catering.js';
-import Edulink_Clubs from '../Types/Edulink_Clubs.js';
-import Edulink_Documents from '../Types/Edulink_Documents.js';
-import Edulink_Exams from '../Types/Edulink_Exams.js';
-import Edulink_ExternalLinks from '../Types/Edulink_ExternalLinks.js';
-import Edulink_Homework from '../Types/Edulink_Homework.js';
-import Edulink_Personal from '../Types/Edulink_Personal.js';
-import Edulink_Status from '../Types/Edulink_Status.js';
-import Edulink_TeacherPhotos from '../Types/Edulink_TeacherPhotos.js';
-import Edulink_Timetable from '../Types/Edulink_Timetable.js';
+import Edulink_Achievement from '../Response_Types/Edulink_Achievement.js';
+import Edulink_AchievementBehaviourLookups from '../Response_Types/Edulink_AchievementBehaviourLookups.js';
+import Edulink_Attendance from '../Response_Types/Edulink_Attendance.js';
+import Edulink_Behaviour from '../Response_Types/Edulink_Behaviour.js';
+import Edulink_Catering from '../Response_Types/Edulink_Catering.js';
+import Edulink_Clubs from '../Response_Types/Edulink_Clubs.js';
+import Edulink_Documents from '../Response_Types/Edulink_Documents.js';
+import Edulink_Exams from '../Response_Types/Edulink_Exams.js';
+import Edulink_ExternalLinks from '../Response_Types/Edulink_ExternalLinks.js';
+import Edulink_Homework from '../Response_Types/Edulink_Homework.js';
+import Edulink_Personal from '../Response_Types/Edulink_Personal.js';
+import Edulink_Status from '../Response_Types/Edulink_Status.js';
+import Edulink_TeacherPhotos from '../Response_Types/Edulink_TeacherPhotos.js';
+import Edulink_Timetable from '../Response_Types/Edulink_Timetable.js';
 
 export default class Edulink {
   Authentication!: Authentication;

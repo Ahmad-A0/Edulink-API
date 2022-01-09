@@ -1,16 +1,16 @@
 import axios from 'axios';
 
-import Edulink_Login from '../Types/Edulink_Login.js';
-import Edulink_SchoolDetails from '../Types/Edulink_SchoolDetails.js';
-import Edulink_Ping from '../Types/Edulink_Ping.js';
-import School_FromCode from '../Types/School_FromCode.js';
+import Edulink_Login from '../Response_Types/Edulink_Login.js';
+import Edulink_SchoolDetails from '../Response_Types/Edulink_SchoolDetails.js';
+import Edulink_Ping from '../Response_Types/Edulink_Ping.js';
+import School_FromCode from '../Response_Types/School_FromCode.js';
 
 import {
   handleResponse,
   method_server_url,
   uuid,
 } from '../Assorted_Tools/tools.js';
-import Edulink_Logout from '../Types/Edulink_Logout.js';
+import Edulink_Logout from '../Response_Types/Edulink_Logout.js';
 
 export default class Authentication {
   uuid!: string;

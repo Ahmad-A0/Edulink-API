@@ -12,6 +12,8 @@ $ npm install edulink-api
 
 ### Importing the module:
 
+You can import the module using either `commonjs` or `esm` syntax:
+
 ```javascript
 const { Edulink_API } = require('edulink-api');
 
@@ -20,10 +22,37 @@ const { Edulink_API } = require('edulink-api');
 import Edulink_API from 'edulink-api';
 ```
 
-### Getting the latest homework:
+### Creating the API object:
+
+You need to login to Edulink first. Before using the API methods. This is done like this:
 
 ```javascript
-const response = await edulink.Homework();
+const edulink_api = Edulink_API({
+  school_code: 'your_school_name',
+  username: 'your_username',
+  password: 'your_password',
+});
+```
+
+### Getting the latest homework:
+
+Here we:
+
+- query for all homework.
+- select the currently active homework.
+- select the first homework returned.
+- print some of the homework's data.
+
+```javascript
+import Edulink_API from 'edulink-api';
+
+const edulink_api = await Edulink_API({
+  school_code: 'your_school_name',
+  username: 'your_username',
+  password: 'your_password',
+});
+
+const response = await edulink_api.Homework();
 
 const currentHomeworks = response.result.homework.current;
 const dueSoonest = currentHomeworks[0];
