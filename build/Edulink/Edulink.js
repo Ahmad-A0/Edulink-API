@@ -13,6 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
+const moment_1 = __importDefault(require("moment"));
 const tools_1 = require("../Assorted_Tools/tools");
 class _Edulink {
     initalize(Authentication) {
@@ -31,7 +32,7 @@ class _Edulink {
             uuid: (0, tools_1.uuid)(),
         };
     }
-    Timetable(date) {
+    Timetable(date = (0, moment_1.default)().format('YYYY-MM-DD')) {
         return __awaiter(this, void 0, void 0, function* () {
             const url = (0, tools_1.method_server_url)('Edulink.Timetable', this.Authentication.school_server);
             const response = yield axios_1.default.post(url, Object.assign({ method: 'EduLink.Timetable', params: {

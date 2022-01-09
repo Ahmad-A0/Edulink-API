@@ -5,7 +5,10 @@ type School_Details = {
         establishment: {
             id: number;
             name: string;
-            idp_login: string[] | object;
+            idp_login: {
+                google: string;
+                microsoft: string; // TODO: Add support for idp_logins in the actual code
+            };
             idp_only: boolean;
             logo: string;
         };

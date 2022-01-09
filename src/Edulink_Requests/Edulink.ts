@@ -1,14 +1,13 @@
 import axios from 'axios';
+import moment from 'moment';
 
 import {
-    roughType,
-    convertRoughToString,
     handleResponse,
     method_server_url,
     uuid,
 } from '../Assorted_Tools/tools';
 
-import { _Authentication } from '../Authentication/Authentication';
+import Authentication from '../Authentication_Requests/Authentication';
 import Edulink_Achievement from '../Types/Edulink_Achievement';
 import Edulink_AchievementBehaviourLookups from '../Types/Edulink_AchievementBehaviourLookups';
 import Edulink_Attendance from '../Types/Edulink_Attendance';
@@ -24,13 +23,13 @@ import Edulink_Status from '../Types/Edulink_Status';
 import Edulink_TeacherPhotos from '../Types/Edulink_TeacherPhotos';
 import Edulink_Timetable from '../Types/Edulink_Timetable';
 
-class _Edulink {
-    Authentication!: _Authentication;
+export default class Edulink {
+    Authentication!: Authentication;
     learner_id!: string;
 
     private generic_header!: { Authorization: string };
 
-    async initalize(Authentication: _Authentication) {
+    async initialize(Authentication: Authentication) {
         this.Authentication = Authentication;
 
         this.generic_header = {
@@ -52,7 +51,9 @@ class _Edulink {
      * @param date
      * should be in format: YYYY-MM-DD
      */
-    async Timetable(date: string): Promise<Edulink_Timetable> {
+    async Timetable(
+        date: string = moment().format('YYYY-MM-DD')
+    ): Promise<Edulink_Timetable> {
         const url = method_server_url(
             'Edulink.Timetable',
             this.Authentication.school_server
@@ -439,10 +440,4 @@ class _Edulink {
 
         return handleResponse(response);
     }
-}
-
-export default async function EduLink(Authentication: _Authentication) {
-    const edulink = new _Edulink();
-    await edulink.initalize(Authentication);
-    return edulink;
 }

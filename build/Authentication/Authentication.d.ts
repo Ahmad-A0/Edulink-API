@@ -19,4 +19,4 @@ export declare class _Authentication {
     Edulink_Logout(): Promise<Edulink_Logout>;
     Edulink_Ping(): Promise<Edulink_Ping>;
 }
-export default function Authentication(school_code: string, username: string, password: string): Promise<_Authentication>;
+export default function Authentication(school_code: string, username: string, password: string, keepAlive?: boolean): Promise<_Authentication>;

@@ -19,7 +19,7 @@ declare class _Edulink {
     private generic_header;
     initalize(Authentication: _Authentication): Promise<void>;
     private get generic_data();
-    Timetable(date: string): Promise<Edulink_Timetable>;
+    Timetable(date?: string): Promise<Edulink_Timetable>;
     Documents(): Promise<Edulink_Documents>;
     Exams(): Promise<Edulink_Exams>;
     Behaviour(): Promise<Edulink_Behaviour>;
