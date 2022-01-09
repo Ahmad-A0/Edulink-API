@@ -1,21 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "lib": ["ES6"],
-    "module": "commonjs",
-    "forceConsistentCasingInFileNames": true,
+    "outDir": "./build",
+    "module": "ES2020",
+    "target": "ES2019",
+    "lib": ["ES2019", "ES2020.String", "DOM", "DOM.Iterable", "es2020"],
     "moduleResolution": "node",
-    "strict": true,
-    "rootDir": "./src/",
-    "outDir": "./build/",
-    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": false,
+    "jsx": "react",
     "declaration": true,
-    "removeComments": true
-    //"noUnusedLocals": true
+    "pretty": true,
+    "newLine": "lf",
+    "stripInternal": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noEmitOnError": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "ts-node": {
-    "files": true,
-    "pretty": true
-  },
-  "exclude": ["node_modules", "build", "todo.js", "json_complete", "jsons"]
+  "include": ["src"]
 }

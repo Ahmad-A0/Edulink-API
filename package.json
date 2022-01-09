@@ -1,21 +1,16 @@
 {
-  "dependencies": {
-    "axios": "^0.24.0",
-    "dotenv": "^10.0.0",
-    "moment": "^2.29.1",
-    "typescript": "^4.5.4",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.8",
-    "@types/uuid": "^8.3.4",
-    "del-cli": "^4.0.1",
-    "prettier": "^2.5.1"
-  },
+  "author": "Ahmad-A0",
   "name": "edulink-api",
   "version": "0.1.0",
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
-  "main": "build/index.js",
+  "license": "MIT",
+  "keywords": ["edulink", "overnet", "overnetdata", "api", "edulink-api"],
+
+  "type": "module",
+  "files": ["build/"],
+  "exports": "./build/index.js",
+  "types": "build/",
+
   "scripts": {
     "test": "node build/test.js",
     "build": "del-cli build && tsc -p tsconfig.json",
@@ -23,16 +18,30 @@
     "prepare": "npm run build",
     "format": "prettier --write ."
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ahmad-A0/Edulink-API.git"
   },
-  "keywords": ["edulink", "overnet", "overnetdata", "api", "edulink-api"],
-  "author": "Ahmad-A0",
-  "license": "MIT",
-  "types": "./build/index.d.ts",
+
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1",
+    "typescript": "^4.5.4",
+    "uuid": "^8.3.2"
+  },
+
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/uuid": "^8.3.4",
+    "del-cli": "^4.0.1",
+    "prettier": "^2.5.1"
+  },
+
   "bugs": {
     "url": "https://github.com/Ahmad-A0/Edulink-API/issues"
   },
+
   "homepage": "https://github.com/Ahmad-A0/Edulink-API#readme"
 }
