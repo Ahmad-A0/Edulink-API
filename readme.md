@@ -39,8 +39,8 @@ const edulink_api = Edulink_API({
 Here we:
 
 - query for all homework.
-- select the currently active homework.
-- select the first homework returned.
+- select only the currently active homeworks.
+- sort the homeworks by due-date and find the one due soonest.
 - print some of the homework's data.
 
 ```javascript
@@ -55,10 +55,13 @@ const edulink_api = await Edulink_API({
 const response = await edulink_api.Homework();
 
 const currentHomeworks = response.result.homework.current;
-const dueSoonest = currentHomeworks[0];
+const dueSoonest = currentHomeworks.sort(
+  (a, b) => new Date(a.due_date) - new Date(b.due_date)
+)[0];
 
 console.log({
   name: dueSoonest.activity,
+  subject: dueSoonest.subject,
   due_date: dueSoonest.due_date,
   set_by: dueSoonest.set_by,
   status: dueSoonest.status,
@@ -79,3 +82,4 @@ console.log({
 - [ ] Add more examples
 - [ ] Document the API
 - [ ] Add missing methods
+- [ ] Improve error messages
