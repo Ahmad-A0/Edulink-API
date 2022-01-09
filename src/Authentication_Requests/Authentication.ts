@@ -12,7 +12,7 @@ import {
 } from '../Assorted_Tools/tools';
 import Edulink_Logout from '../Types/Edulink_Logout';
 
-export class _Authentication {
+export default class Authentication {
     uuid!: string;
     school_server!: string;
     learner_id!: string;
@@ -21,6 +21,8 @@ export class _Authentication {
     School_From_Code_Return!: School_FromCode;
     Edulink_SchoolDetails_Return!: Edulink_SchoolDetails;
     Edulink_Login_Return!: Edulink_Login;
+
+    keepAlive!: NodeJS.Timeout;
 
     constructor() {}
 
@@ -47,7 +49,7 @@ export class _Authentication {
         this.authtoken = this.Edulink_Login_Return.result.authtoken;
 
         if (keepAlive) {
-            setInterval(() => {
+            this.keepAlive = setInterval(() => {
                 this.Edulink_Ping();
             }, 1000 * 60 * 5);
         }
@@ -152,6 +154,8 @@ export class _Authentication {
             }
         );
 
+        clearInterval(this.keepAlive);
+
         return handleResponse(response);
     }
 
@@ -168,14 +172,4 @@ export class _Authentication {
 
         return handleResponse(response);
     }
-}
-
-export default async function Authentication(
-    school_code: string,
-    username: string,
-    password: string
-): Promise<_Authentication> {
-    const auth = new _Authentication();
-    await auth.initialize(school_code, username, password);
-    return auth;
 }

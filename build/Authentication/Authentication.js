@@ -123,10 +123,10 @@ class _Authentication {
     }
 }
 exports._Authentication = _Authentication;
-function Authentication(school_code, username, password) {
+function Authentication(school_code, username, password, keepAlive = false) {
     return __awaiter(this, void 0, void 0, function* () {
         const auth = new _Authentication();
-        yield auth.initialize(school_code, username, password);
+        yield auth.initialize(school_code, username, password, keepAlive);
         return auth;
     });
 }

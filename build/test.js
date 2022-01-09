@@ -16,11 +16,37 @@ const Authentication_1 = __importDefault(require("./Authentication/Authenticatio
 const Edulink_1 = __importDefault(require("./Edulink/Edulink"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const path_1 = __importDefault(require("path"));
+const isGetter = (x, name) => (Object.getOwnPropertyDescriptor(x, name) || {}).get;
+const isFunction = (x, name) => typeof x[name] === 'function';
+const deepFunctions = (x) => x && x !== Object.prototype && Object.getOwnPropertyNames(x).filter((name) => isGetter(x, name) || isFunction(x, name)).concat(deepFunctions(Object.getPrototypeOf(x)) || []);
+const distinctDeepFunctions = (x) => Array.from(new Set(deepFunctions(x)));
+const userFunctions = (x) => distinctDeepFunctions(x).filter((name) => name !== 'constructor' && !~name.indexOf('__'));
 dotenv_1.default.config({
     path: path_1.default.join(__dirname, '../.env'),
 });
+const skipList = ['TeacherPhotos'];
+let [passed, failed] = [0, 0];
 (() => __awaiter(void 0, void 0, void 0, function* () {
     const auth = yield (0, Authentication_1.default)(process.env.EDULINK_SCHOOL_ID, process.env.EDULINK_USERNAME, process.env.EDULINK_PASSWORD);
     const edulink = yield (0, Edulink_1.default)(auth);
-    console.log(yield edulink.Homework());
+    for (const property of userFunctions(edulink)) {
+        if (property[0].toLowerCase() === property[0] ||
+            skipList.includes(property)) {
+            continue;
+        }
+        const response = yield edulink[property]();
+        if (response.result.success) {
+            console.log(`${property}:`, 'passed');
+            passed++;
+        }
+        else {
+            console.log(`${property}: ${JSON.stringify(response, null, 2)}`);
+            failed++;
+        }
+    }
+    auth.Edulink_Logout();
+    console.log('\n');
+    console.log(`Passed: ${passed}`);
+    console.log(`Failed: ${failed}`);
+    console.log(`Total: ${passed + failed}`);
 }))();
