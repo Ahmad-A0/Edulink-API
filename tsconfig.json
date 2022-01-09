@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["ES6"],
+        "module": "commonjs",
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "rootDir": "./src/",
+        "outDir": "./build/",
+        "esModuleInterop": true,
+        "declaration": true,
+        "removeComments": true
+        //"noUnusedLocals": true
+    },
+    "ts-node": {
+        "files": true,
+        "pretty": true
+    },
+    "exclude": ["node_modules", "build", "todo.js", "json_complete", "jsons"]
+}
