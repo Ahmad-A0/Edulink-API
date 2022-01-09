@@ -1,6 +1,3 @@
-import Authentication from './Authentication_Requests/Authentication';
-import EduLink from './Edulink_Requests/Edulink';
-
 import dotenv from 'dotenv';
 import path from 'path';
 import Edulink_API from '.';
@@ -14,7 +11,7 @@ const deepFunctions = (x: Object): any => x && x !== Object.prototype && Object.
 //prettier-ignore
 const distinctDeepFunctions = (x: any): string[] => Array.from(new Set(deepFunctions(x)));
 //prettier-ignore
-const userFunctions = (x: any): string[] => distinctDeepFunctions(x).filter( (name: any) => name !== 'constructor' && !~name.indexOf('__'));
+const userFunctions = (x: any): any => distinctDeepFunctions(x).filter( (name: any) => name !== 'constructor' && !~name.indexOf('__'));
 
 dotenv.config({
   path: path.join(__dirname, '../.env'),

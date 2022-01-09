@@ -1,7 +1,7 @@
 import Authentication from './Authentication_Requests/Authentication';
 import EduLink from './Edulink_Requests/Edulink';
 
-export default async function Edulink_API(
+async function Edulink_API(
   school_code: string,
   username: string,
   password: string,
@@ -16,5 +16,5 @@ export default async function Edulink_API(
   return edulinkInstance;
 }
 
-module.exports = Edulink_API;
-module.exports.default = Edulink_API;
+export default Edulink_API;
+export { Edulink_API };
