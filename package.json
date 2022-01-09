@@ -8,6 +8,31 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
-    "@types/uuid": "^8.3.4"
-  }
+    "@types/uuid": "^8.3.4",
+    "del-cli": "^4.0.1",
+    "prettier": "^2.5.1"
+  },
+  "name": "edulink-api",
+  "version": "0.1.0",
+  "description": "An unofficial API for interacting with OvernetData's Edulink service",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node build/test.js",
+    "build": "del-cli build && tsc -p tsconfig.json",
+    "release": "npm run build && npm publish",
+    "prepare": "npm run build",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmad-A0/Edulink-API.git"
+  },
+  "keywords": ["edulink", "overnet", "overnetdata", "api", "edulink-api"],
+  "author": "Ahmad-A0",
+  "license": "MIT",
+  "types": "./build/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/Ahmad-A0/Edulink-API/issues"
+  },
+  "homepage": "https://github.com/Ahmad-A0/Edulink-API#readme"
 }
