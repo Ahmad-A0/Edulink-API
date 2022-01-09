@@ -17,15 +17,15 @@ const distinctDeepFunctions = (x: any): string[] => Array.from(new Set(deepFunct
 const userFunctions = (x: any): string[] => distinctDeepFunctions(x).filter( (name: any) => name !== 'constructor' && !~name.indexOf('__'));
 
 dotenv.config({
-    path: path.join(__dirname, '../.env'),
+  path: path.join(__dirname, '../.env'),
 });
 
 declare const process: {
-    env: {
-        EDULINK_SCHOOL_ID: string;
-        EDULINK_USERNAME: string;
-        EDULINK_PASSWORD: string;
-    };
+  env: {
+    EDULINK_SCHOOL_ID: string;
+    EDULINK_USERNAME: string;
+    EDULINK_PASSWORD: string;
+  };
 };
 
 const skipList: string[] = ['TeacherPhotos'];
@@ -33,35 +33,35 @@ const skipList: string[] = ['TeacherPhotos'];
 let [passed, failed] = [0, 0];
 
 (async () => {
-    const edulink: any = await Edulink_API(
-        process.env.EDULINK_SCHOOL_ID,
-        process.env.EDULINK_USERNAME,
-        process.env.EDULINK_PASSWORD
-    );
+  const edulink: any = await Edulink_API(
+    process.env.EDULINK_SCHOOL_ID,
+    process.env.EDULINK_USERNAME,
+    process.env.EDULINK_PASSWORD
+  );
 
-    for (const property of userFunctions(edulink)) {
-        if (
-            property[0].toLowerCase() === property[0] ||
-            skipList.includes(property)
-        ) {
-            continue;
-        }
-
-        const response = await edulink[property]();
-
-        if (response.result.success) {
-            console.log(`${property}:`, 'passed');
-            passed++;
-        } else {
-            console.log(`${property}: ${JSON.stringify(response, null, 2)}`);
-            failed++;
-        }
+  for (const property of userFunctions(edulink)) {
+    if (
+      property[0].toLowerCase() === property[0] ||
+      skipList.includes(property)
+    ) {
+      continue;
     }
 
-    edulink.Authentication.Edulink_Logout();
+    const response = await edulink[property]();
 
-    console.log('\n');
-    console.log(`Passed: ${passed}`);
-    console.log(`Failed: ${failed}`);
-    console.log(`Total: ${passed + failed}`);
+    if (response.result.success) {
+      console.log(`${property}:`, 'passed');
+      passed++;
+    } else {
+      console.log(`${property}: ${JSON.stringify(response, null, 2)}`);
+      failed++;
+    }
+  }
+
+  edulink.Authentication.Edulink_Logout();
+
+  console.log('\n');
+  console.log(`Passed: ${passed}`);
+  console.log(`Failed: ${failed}`);
+  console.log(`Total: ${passed + failed}`);
 })();

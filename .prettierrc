@@ -1,0 +1,30 @@
+{
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "tabWidth": 2,
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["**/*.json"],
+      "options": {
+        "tabWidth": 2,
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["**/*.yml"],
+      "options": {
+        "tabWidth": 2,
+        "parser": "yaml"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "recommendations": ["esbenp.prettier-vscode", "aaron-bond.better-comments"],
+
+  "unwantedRecommendations": [
+    "vscodeemacs.emacs" // Use Vim 😎
+  ]
+}
