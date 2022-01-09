@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'path';
-import Edulink_API from '.';
+import Edulink_API from './index.js';
 
 //prettier-ignore
 const isGetter = (x: any, name: PropertyKey) => (Object.getOwnPropertyDescriptor(x, name) || {}).get;

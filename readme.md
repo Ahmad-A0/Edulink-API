@@ -5,10 +5,12 @@
 ## Installation
 
 ```bash
-npm install edulink-api
+$ npm install edulink-api
 ```
 
-## Usage
+## Usage Examples
+
+### Importing the module:
 
 ```javascript
 const { Edulink_API } = require('edulink-api');
@@ -18,9 +20,33 @@ const { Edulink_API } = require('edulink-api');
 import Edulink_API from 'edulink-api';
 ```
 
-```javascript
-const edulink = Edulink_API('School_Name', 'Username', 'Password');
+### Getting the latest homework:
 
+```javascript
 const response = await edulink.Homework();
-const currentHomework = response.result.homework.current;
+
+const currentHomeworks = response.result.homework.current;
+const dueSoonest = currentHomeworks[0];
+
+console.log({
+  name: dueSoonest.activity,
+  due_date: dueSoonest.due_date,
+  set_by: dueSoonest.set_by,
+  status: dueSoonest.status,
+});
+
+/*
+{
+  name: 'Electricity CCT',
+  due_date: '2022-01-14',
+  set_by: 'Mr D. M. Holmes',
+  status: 'Not submitted'
+}
+*/
 ```
+
+### TODO:
+
+- [ ] Add more examples
+- [ ] Document the API
+- [ ] Add missing methods
