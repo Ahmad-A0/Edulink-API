@@ -2,6 +2,7 @@ type School_Details = {
   jsonrpc: string;
   id: string;
   result: {
+    error?: string;
     establishment: {
       id: number;
       name: string;

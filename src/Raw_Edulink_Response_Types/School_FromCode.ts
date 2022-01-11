@@ -3,6 +3,7 @@ type School_FromCode = {
   id: string;
   result: {
     success: boolean;
+    error?: string;
     school: {
       server: string;
       school_id: number;
