@@ -1,6 +1,7 @@
 type Edulink_Timetable = {
   jsonrpc: string;
   result: {
+    error?: string;
     method: string;
     success: boolean;
     requested_date: string;

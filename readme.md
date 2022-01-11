@@ -83,3 +83,6 @@ console.log({
 - [ ] Document the API
 - [ ] Add missing methods
 - [ ] Improve error messages
+- [ ] Add more abstractions, if login fails the user shouldn't have to parse the error message themselves
+- [ ] Add missing return type properties, because of the way the types were created some properties that could be returned might not exist.
+- [ ] I used the edulink DEMO when creating types and methods. This turns out to be really outdated and is missing a lot of properties. I will need to re do these types using the API with a real login.
