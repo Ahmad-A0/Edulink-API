@@ -1,0 +1,12 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "plugin": ["typedoc-plugin-markdown", "typedoc-plugin-rename-defaults"],
+  "out": "./docs/",
+  "readme": "./readme.md",
+  "tsconfig": "./tsconfig.json",
+  "entryPointStrategy": "Expand",
+  "entryPoints": [
+    "./src/index.ts",
+    "src/Raw_Edulink_Response_Types/Edulink_Raw_Response_Types.ts"
+  ]
+}
