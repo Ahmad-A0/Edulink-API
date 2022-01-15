@@ -1,4 +1,4 @@
-# edulink-api
+# edulink-api _[*under construction*]_
 
 > An Unofficial API for OvernetData's [Edulink](https://www.edulinkone.com/).
 
@@ -15,10 +15,6 @@ $ npm install edulink-api
 You can import the module using either `commonjs` or `esm` syntax:
 
 ```javascript
-const { Edulink_API } = require('edulink-api');
-
-// or for ESM
-
 import Edulink_API from 'edulink-api';
 ```
 
@@ -86,3 +82,4 @@ console.log({
 - [ ] Add more abstractions, if login fails the user shouldn't have to parse the error message themselves
 - [ ] Add missing return type properties, because of the way the types were created some properties that could be returned might not exist.
 - [ ] I used the edulink DEMO when creating types and methods. This turns out to be really outdated and is missing a lot of properties. I will need to re do these types using the API with a real login.
+- [ ] Update examples
