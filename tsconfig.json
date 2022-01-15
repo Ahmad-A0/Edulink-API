@@ -4,7 +4,8 @@
     "outDir": "build",
     "target": "es2020",
     "lib": ["es2020"],
-    "noPropertyAccessFromIndexSignature": false
+    "noPropertyAccessFromIndexSignature": false,
+    "removeComments": false
   },
   "include": ["src"],
   "exclude": ["build"]

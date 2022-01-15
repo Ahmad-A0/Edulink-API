@@ -1,15 +1,35 @@
-import Edulink_Raw from '../Raw_Edulink_Requests/Edulink_Raw.js';
-import Edulink_Login from '../Raw_Edulink_Response_Types/Edulink_Login.js';
-import School_FromCode from '../Raw_Edulink_Response_Types/School_FromCode.js';
+import { Edulink_Raw } from '../index.js';
+import {
+  Edulink_Login,
+  School_FromCode,
+} from '../Raw_Edulink_Response_Types/Edulink_Raw_Response_Types.js';
 import Edulink_Timetable, {
   Edulink_Timetable_Lesson,
 } from '../Raw_Edulink_Response_Types/Edulink_Timetable.js';
 
+/**
+ * This class is the main API class. It is an abstracton of the {@link Edulink_Raw} class.
+ * If you require more granular control over the API, you can use the {@link Edulink_Raw} class directly.
+ */
 class Edulink_API {
+  /**
+   * Whether the {@link Edulink_API} instance has been authenticated
+   */
   isAuthenticated: boolean;
+
+  /**
+   * If this is true the server will be pinged every 5 minutes to keep the session alive
+   */
   keepAlive: NodeJS.Timeout | undefined;
+
+  /**
+   * This is the {@link Edulink_Raw} instance that is used to make all the requests to the edulink api
+   */
   Edulink_Raw: Edulink_Raw;
 
+  /**
+   * This is used to store the raw_responses from the api calls
+   */
   Raw_Responses: {
     Login_Raw_Response?: Edulink_Login;
     School_FromCode_Raw_Response?: School_FromCode;
@@ -17,14 +37,32 @@ class Edulink_API {
   };
 
   // TODO: Stop prettier from formatting this
+  /**
+   * This is used to store maps from ids to objects
+   */
   Maps!: {
+    /**
+     * Maps from room id to room
+     */
     room_id_to_room: Map<string, { code: string; name: string }>;
+    /**
+     * Maps from year group id to year_group
+     */
     year_group_id_to_year_group: Map<string, { name: string; code: string }>;
+    /**
+     * Maps from community group id to community_group
+     */
     community_group_id_to_community_group: Map<string, { name: string }>;
+    /**
+     * Maps from teaching group id to teaching_group
+     */
     teaching_group_id_to_teaching_group: Map<
       string,
       { name: string; employee_id: string }
     >;
+    /**
+     * Maps from form group id to form_group
+     */
     form_group_id_to_form_group: Map<
       string,
       {
@@ -34,12 +72,15 @@ class Edulink_API {
         room: { code: string; name: string };
       }
     >;
+    /**
+     * Maps from period id to lesson, this is populated in {@link Edulink_API.getTimetable}
+     */
     period_id_to_lesson: Map<number, Edulink_Timetable_Lesson>;
   };
 
   /**
    * The full list of permissions the user has can be viewed in `this.Raw_Responses.Login_Raw_Response.result.capabilities`
-   * This is defined when `this.Authenticate` is called
+   * This is defined when {@link Edulink_API.Authenticate} is called
    */
   userPermissions!: {
     can_create_messages: boolean;
@@ -58,6 +99,12 @@ class Edulink_API {
     this.Raw_Responses = { Timetable_Raw_Responses: [] };
   }
 
+  /**
+   *
+   * @param param0 The school_code, username and password to use to authenticate, if you don't know your school_code your school's postcode can also be used
+   * @param keepAlive {@link Edulink_API.keepAlive}
+   * @returns A promise that resolves to an array of `[forename, surname, avatar]`
+   */
   async Authenticate(
     {
       school_code,
@@ -187,8 +234,10 @@ class Edulink_API {
 
   /**
    * Returns the timetable of the user from a given date
-   * @param startDate A date in the format `YYYY-MM-DD`
-   * TODO: @returns
+   * @param startDate A date in the format `YYYY-MM-DD` to start the events in the timetable from
+   * @param endDate A date in the format `YYYY-MM-DD` to end the timetable in the timetable from
+   * @param includeOverflow Include events that are outside the end dates included because they are in the same week as the end date, this is ony used if endDate is provided
+   * @returns An array of objects that represent a date and its events
    */
   async Timetable(
     startDate?: string,

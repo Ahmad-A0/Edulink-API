@@ -6,32 +6,54 @@ import {
   uuid,
 } from '../Assorted_Tools/tools.js';
 
-import Edulink_Achievement from '../Raw_Edulink_Response_Types/Edulink_Achievement.js';
-import Edulink_AchievementBehaviourLookups from '../Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.js';
-import Edulink_Attendance from '../Raw_Edulink_Response_Types/Edulink_Attendance.js';
-import Edulink_Behaviour from '../Raw_Edulink_Response_Types/Edulink_Behaviour.js';
-import Edulink_Catering from '../Raw_Edulink_Response_Types/Edulink_Catering.js';
-import Edulink_Clubs from '../Raw_Edulink_Response_Types/Edulink_Clubs.js';
-import Edulink_Documents from '../Raw_Edulink_Response_Types/Edulink_Documents.js';
-import Edulink_Exams from '../Raw_Edulink_Response_Types/Edulink_Exams.js';
-import Edulink_ExternalLinks from '../Raw_Edulink_Response_Types/Edulink_ExternalLinks.js';
-import Edulink_Homework from '../Raw_Edulink_Response_Types/Edulink_Homework.js';
-import Edulink_Login from '../Raw_Edulink_Response_Types/Edulink_Login.js';
-import Edulink_Logout from '../Raw_Edulink_Response_Types/Edulink_Logout.js';
-import Edulink_Personal from '../Raw_Edulink_Response_Types/Edulink_Personal.js';
-import Edulink_Ping from '../Raw_Edulink_Response_Types/Edulink_Ping.js';
-import Edulink_SchoolDetails from '../Raw_Edulink_Response_Types/Edulink_SchoolDetails.js';
-import Edulink_Status from '../Raw_Edulink_Response_Types/Edulink_Status.js';
-// import Edulink_TeacherPhotos from '../Raw_Edulink_Response_Types/Edulink_TeacherPhotos.js';
-import Edulink_Timetable from '../Raw_Edulink_Response_Types/Edulink_Timetable.js';
-import School_FromCode from '../Raw_Edulink_Response_Types/School_FromCode.js';
+import {
+  Edulink_Achievement,
+  Edulink_AchievementBehaviourLookups,
+  Edulink_Attendance,
+  Edulink_Behaviour,
+  Edulink_Catering,
+  Edulink_Clubs,
+  Edulink_Documents,
+  Edulink_Exams,
+  Edulink_ExternalLinks,
+  Edulink_Homework,
+  Edulink_Login,
+  Edulink_Logout,
+  Edulink_Personal,
+  Edulink_Ping,
+  Edulink_RegisterCodes,
+  Edulink_SchoolDetails,
+  Edulink_Status,
+  Edulink_Timetable,
+  School_FromCode,
+} from '../Raw_Edulink_Response_Types/Edulink_Raw_Response_Types.js';
 
+/**
+ * This class houses all the raw requests to the Edulink API.
+ * Properties that the methods require need to initialized with the {@link Edulink_Raw.initialize} method.
+ */
 export default class Edulink_Raw {
+  /**
+   * The ID of the current signed in user
+   */
   learner_id!: string;
+
+  /**
+   * The base server that requests are made to
+   */
   school_server!: string;
 
+  /**
+   * This houses the authentication bearer
+   */
   private generic_header!: { Authorization: string };
 
+  /**
+   *
+   * @param authtoken The authtoken to pass to requests, this is obtained from the {@link Edulink_Login} response
+   * @param learner_id The learner_id to pass to requests, this is obtained from the {@link Edulink_Login} response
+   * @param school_server The school_server to pass to requests, this is obtained from the {@link Edulink_SchoolDetails} response
+   */
   async initialize(
     authtoken: string,
     learner_id: string,
@@ -45,6 +67,9 @@ export default class Edulink_Raw {
     this.school_server = school_server;
   }
 
+  /**
+   * This returns some fields needed in the data section of the other requests
+   */
   private get generic_data(): { jsonrpc: string; id: number; uuid: string } {
     return {
       jsonrpc: '2.0',
@@ -54,8 +79,10 @@ export default class Edulink_Raw {
   }
 
   /**
-   * @param date
-   * should be in format: YYYY-MM-DD
+   * Gets the timetable for the current user from a given date
+   *
+   * @param date should be in format: YYYY-MM-DD, this is the start date of the range by default edulink will return 16 days of data //TODO: Fact check this is always true
+   * @return A promise that resolves to the {@link Edulink_Attendance} response
    */
   async Timetable(date: string): Promise<Edulink_Timetable> {
     const url = method_server_url('Edulink.Timetable', this.school_server);
@@ -81,6 +108,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Gets the results from the `documents` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Documents} response
+   */
   async Documents(): Promise<Edulink_Documents> {
     const url = method_server_url('Edulink.Documents', this.school_server);
 
@@ -104,6 +135,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Gets the results from the `exams` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Exams} response
+   */
   async Exams(): Promise<Edulink_Exams> {
     const url = method_server_url('Edulink.Exams', this.school_server);
 
@@ -127,6 +162,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Gets the results from the `Behaviour` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Behaviour} response
+   */
   async Behaviour(): Promise<Edulink_Behaviour> {
     const url = method_server_url('Edulink.Behaviour', this.school_server);
 
@@ -151,6 +190,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Gets a look up table for the {@link Edulink_Achievement} and {@link Edulink_Behaviour} responses
+   * @returns A promise that resolves to the {@link Edulink_AchievementBehaviourLookups} response, this is a look up table for the {@link Edulink_Achievement} and {@link Edulink_Behaviour} responses
+   */
   async AchievementBehaviourLookups(): Promise<Edulink_AchievementBehaviourLookups> {
     const url = method_server_url(
       'Edulink.AchievementBehaviourLookups',
@@ -175,6 +218,9 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * TODO: Can't remeber what this is
+   */
   async RegisterCodes(): Promise<Edulink_RegisterCodes> {
     const url = method_server_url('Edulink.RegisterCodes', this.school_server);
 
@@ -196,6 +242,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `achievements` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Achievement} response
+   */
   async Achievement(): Promise<Edulink_Achievement> {
     const url = method_server_url('Edulink.Achievement', this.school_server);
 
@@ -219,6 +269,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `attendance` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Attendance} response
+   */
   async Attendance(): Promise<Edulink_Attendance> {
     const url = method_server_url('Edulink.Attendance', this.school_server);
 
@@ -243,6 +297,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `catering` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Catering} response
+   */
   async Catering(): Promise<Edulink_Catering> {
     const url = method_server_url('Edulink.Catering', this.school_server);
 
@@ -266,6 +324,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `Homework` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Homework} response
+   */
   async Homework(): Promise<Edulink_Homework> {
     const url = method_server_url('Edulink.Homework', this.school_server);
 
@@ -289,6 +351,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `external links` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_ExternalLinks} response
+   */
   async ExternalLinks(): Promise<Edulink_ExternalLinks> {
     const url = method_server_url('Edulink.ExternalLinks', this.school_server);
 
@@ -310,6 +376,11 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `clubs` section of edulink
+   * @param member If true clubs that the learner is a member of will be returned, if false clubs that the learner is not a member of will be returned
+   * @returns A promise that resolves to the {@link Edulink_Clubs} response
+   */
   async Clubs(member: boolean = true): Promise<Edulink_Clubs> {
     const url = method_server_url('Edulink.Clubs', this.school_server);
 
@@ -334,6 +405,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the data from the `personal` section of edulink
+   * @returns A promise that resolves to the {@link Edulink_Personal} response
+   */
   async Personal(): Promise<Edulink_Personal> {
     const url = method_server_url('Edulink.Personal', this.school_server);
 
@@ -357,6 +432,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Returns the current status of the user sign in as well as info about the user's upcoming whereabouts, see {@link Edulink_Status}
+   * @returns A promise that resolves to the {@link Edulink_Status} response
+   */
   async Status(): Promise<Edulink_Status> {
     const url = method_server_url('Edulink.Status', this.school_server);
 
@@ -406,6 +485,11 @@ export default class Edulink_Raw {
   }
   */
 
+  /**
+   * Returns information about the login options of the school as well as the school name and id, see {@link Edulink_SchoolDetails}
+   * @param school_server The `school_server` to query information about
+   * @returns information about the login options of the school as well as the school name and id, see {@link Edulink_SchoolDetails}
+   */
   async SchoolDetails(
     school_server: string = this.school_server
   ): Promise<Edulink_SchoolDetails> {
@@ -431,10 +515,10 @@ export default class Edulink_Raw {
   }
 
   /**
-   *
+   * Returns a response that contains the school_code of a school from the school_server
    * @param school_code
    * @param server The server to use to find the school_code. This should always be the default unless you're debugging or something.
-   * @returns
+   * @returns A promise that resolves to a response object that contains the school code and server.
    */
   async School_FromCode(
     school_code: string,
@@ -453,6 +537,14 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   *
+   * @param username The username that should be used for authentication
+   * @param password The password that should be used for authentication
+   * @param establishment_id The id of the establishment that the user is trying to authenticate against, this is provided in {@link Edulink_SchoolDetails}
+   * @param server The server to authenticate with.
+   * @returns A promise that resolves to the {@link Edulink_Login} response, this response contains important data about room and group ids
+   */
   async Login(
     username: string,
     password: string,
@@ -484,6 +576,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Logs the user out of the school server, this will render most of the class useless as authentication is required for the methods to run
+   * @returns A promise that resolves to the {@link Edulink_Logout} response
+   */
   async Logout(): Promise<Edulink_Logout> {
     const url = method_server_url('EduLink.Logout', this.school_server);
 
@@ -505,6 +601,10 @@ export default class Edulink_Raw {
     return handleResponse(response);
   }
 
+  /**
+   * Ping's the server to keep the session alive //TODO: See how long the default session is and how long it should be
+   * @returns A promise that resolves to the {@link Edulink_Ping} response
+   */
   async Ping(): Promise<Edulink_Ping> {
     const url = method_server_url('EduLink.Ping', this.school_server);
 

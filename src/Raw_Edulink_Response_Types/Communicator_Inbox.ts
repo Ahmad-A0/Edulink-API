@@ -1,3 +1,7 @@
+/**
+ * Communicator Inbox
+ * @alias Communicator_Inbox
+ */
 type Communicator_Inbox = {
   jsonrpc: string;
   result: {

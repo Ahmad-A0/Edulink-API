@@ -42,3 +42,5 @@ type Edulink_RegisterCodes = {
     };
   };
 };
+
+export default Edulink_RegisterCodes;
