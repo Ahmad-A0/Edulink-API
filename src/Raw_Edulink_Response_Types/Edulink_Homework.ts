@@ -1,6 +1,7 @@
 type Edulink_Homework = {
   jsonrpc: string;
   result: {
+    error?: string;
     method: string;
     success: boolean;
     homework: {
@@ -19,10 +20,7 @@ type Edulink_Homework = {
         deletable: boolean;
         cloneable: boolean;
         status: string;
-        learners: {
-          id: string;
-          completed: boolean;
-        }[];
+        completed: boolean;
       }[];
       past: {
         id: number;
@@ -30,18 +28,16 @@ type Edulink_Homework = {
         due_date: string;
         available_date: string;
         activity: string;
+        due_reminder: string;
         subject: string;
         icon: string;
         description: string;
         set_by: string;
-        link: string;
+        source: string;
+        deletable: boolean;
+        cloneable: boolean;
         status: string;
-        grade: string;
-        feedback: string;
-        learners: {
-          id: string;
-          completed: boolean;
-        }[];
+        completed: boolean;
       }[];
 
       report: {
