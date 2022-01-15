@@ -1,42 +1,42 @@
-[edulink-api](../README.md) / [Modules](../modules.md) / Raw\_Edulink\_Response\_Types/Edulink\_Raw\_Response\_Types
+[edulink-api](../README.md) / [Exports](../modules.md) / Edulink\_Raw\_Response\_Types
 
-# Module: Raw\_Edulink\_Response\_Types/Edulink\_Raw\_Response\_Types
+# Namespace: Edulink\_Raw\_Response\_Types
 
 ## Table of contents
 
 ### Type aliases
 
-- [Communicator\_Inbox](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#communicator_inbox)
-- [Communicator\_Outbox](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#communicator_outbox)
-- [Edulink\_Achievement](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_achievement)
-- [Edulink\_AchievementBehaviourLookups](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_achievementbehaviourlookups)
-- [Edulink\_AssessmentGrids](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_assessmentgrids)
-- [Edulink\_Attendance](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_attendance)
-- [Edulink\_Behaviour](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_behaviour)
-- [Edulink\_Calendar](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_calendar)
-- [Edulink\_Catering](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_catering)
-- [Edulink\_Clubs](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_clubs)
-- [Edulink\_DataCollectionLookups](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_datacollectionlookups)
-- [Edulink\_DataCollectionValues](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_datacollectionvalues)
-- [Edulink\_Documents](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_documents)
-- [Edulink\_Exams](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_exams)
-- [Edulink\_ExternalLinks](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_externallinks)
-- [Edulink\_Homework](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_homework)
-- [Edulink\_ICalendars](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_icalendars)
-- [Edulink\_Login](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_login)
-- [Edulink\_Logout](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_logout)
-- [Edulink\_Noticeboard](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_noticeboard)
-- [Edulink\_Personal](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_personal)
-- [Edulink\_Ping](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_ping)
-- [Edulink\_RegisterCodes](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_registercodes)
-- [Edulink\_SchoolDetails](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_schooldetails)
-- [Edulink\_Status](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_status)
-- [Edulink\_TeacherPhotos](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_teacherphotos)
-- [Edulink\_Timetable](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable)
-- [Edulink\_Timetable\_Day](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_day)
-- [Edulink\_Timetable\_Lesson](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_lesson)
-- [Edulink\_Timetable\_Period](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_period)
-- [School\_FromCode](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#school_fromcode)
+- [Communicator\_Inbox](Edulink_Raw_Response_Types.md#communicator_inbox)
+- [Communicator\_Outbox](Edulink_Raw_Response_Types.md#communicator_outbox)
+- [Edulink\_Achievement](Edulink_Raw_Response_Types.md#edulink_achievement)
+- [Edulink\_AchievementBehaviourLookups](Edulink_Raw_Response_Types.md#edulink_achievementbehaviourlookups)
+- [Edulink\_AssessmentGrids](Edulink_Raw_Response_Types.md#edulink_assessmentgrids)
+- [Edulink\_Attendance](Edulink_Raw_Response_Types.md#edulink_attendance)
+- [Edulink\_Behaviour](Edulink_Raw_Response_Types.md#edulink_behaviour)
+- [Edulink\_Calendar](Edulink_Raw_Response_Types.md#edulink_calendar)
+- [Edulink\_Catering](Edulink_Raw_Response_Types.md#edulink_catering)
+- [Edulink\_Clubs](Edulink_Raw_Response_Types.md#edulink_clubs)
+- [Edulink\_DataCollectionLookups](Edulink_Raw_Response_Types.md#edulink_datacollectionlookups)
+- [Edulink\_DataCollectionValues](Edulink_Raw_Response_Types.md#edulink_datacollectionvalues)
+- [Edulink\_Documents](Edulink_Raw_Response_Types.md#edulink_documents)
+- [Edulink\_Exams](Edulink_Raw_Response_Types.md#edulink_exams)
+- [Edulink\_ExternalLinks](Edulink_Raw_Response_Types.md#edulink_externallinks)
+- [Edulink\_Homework](Edulink_Raw_Response_Types.md#edulink_homework)
+- [Edulink\_ICalendars](Edulink_Raw_Response_Types.md#edulink_icalendars)
+- [Edulink\_Login](Edulink_Raw_Response_Types.md#edulink_login)
+- [Edulink\_Logout](Edulink_Raw_Response_Types.md#edulink_logout)
+- [Edulink\_Noticeboard](Edulink_Raw_Response_Types.md#edulink_noticeboard)
+- [Edulink\_Personal](Edulink_Raw_Response_Types.md#edulink_personal)
+- [Edulink\_Ping](Edulink_Raw_Response_Types.md#edulink_ping)
+- [Edulink\_RegisterCodes](Edulink_Raw_Response_Types.md#edulink_registercodes)
+- [Edulink\_SchoolDetails](Edulink_Raw_Response_Types.md#edulink_schooldetails)
+- [Edulink\_Status](Edulink_Raw_Response_Types.md#edulink_status)
+- [Edulink\_TeacherPhotos](Edulink_Raw_Response_Types.md#edulink_teacherphotos)
+- [Edulink\_Timetable](Edulink_Raw_Response_Types.md#edulink_timetable)
+- [Edulink\_Timetable\_Day](Edulink_Raw_Response_Types.md#edulink_timetable_day)
+- [Edulink\_Timetable\_Lesson](Edulink_Raw_Response_Types.md#edulink_timetable_lesson)
+- [Edulink\_Timetable\_Period](Edulink_Raw_Response_Types.md#edulink_timetable_period)
+- [School\_FromCode](Edulink_Raw_Response_Types.md#school_fromcode)
 
 ## Type aliases
 
@@ -68,7 +68,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
+[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
+[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
 
 ___
 
@@ -246,7 +246,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
 
 ___
 
@@ -560,7 +560,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
 
 ___
 
@@ -581,7 +581,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
 
 ___
 
@@ -637,7 +637,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
 
 ___
 
@@ -665,7 +665,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Homework.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Homework.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L1)
 
 ___
 
@@ -692,7 +692,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
 
 ___
 
@@ -843,7 +843,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
 
 ___
 
@@ -863,7 +863,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
 
 ___
 
@@ -888,7 +888,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
 
 ___
 
@@ -955,7 +955,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
 
 ___
 
@@ -981,7 +981,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
 
 ___
 
@@ -1018,7 +1018,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
 
 ___
 
@@ -1053,7 +1053,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
 
 ___
 
@@ -1113,7 +1113,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
 
 ___
 
@@ -1139,7 +1139,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
 
 ___
 
@@ -1162,11 +1162,11 @@ ___
 | `result.showing_to` | `string` |
 | `result.start_of_week` | `string` |
 | `result.success` | `boolean` |
-| `result.weeks` | { `days`: [`Edulink_Timetable_Day`](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_day)[] ; `name`: `string`  }[] |
+| `result.weeks` | { `days`: [`Edulink_Timetable_Day`](Edulink_Raw_Response_Types.md#edulink_timetable_day)[] ; `name`: `string`  }[] |
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
 
 ___
 
@@ -1181,13 +1181,13 @@ ___
 | `date` | `string` |
 | `id` | `number` |
 | `is_current` | `boolean` |
-| `lessons` | [`Edulink_Timetable_Lesson`](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_lesson)[] |
+| `lessons` | [`Edulink_Timetable_Lesson`](Edulink_Raw_Response_Types.md#edulink_timetable_lesson)[] |
 | `name` | `string` |
-| `periods` | [`Edulink_Timetable_Period`](Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_period)[] |
+| `periods` | [`Edulink_Timetable_Period`](Edulink_Raw_Response_Types.md#edulink_timetable_period)[] |
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
 
 ___
 
@@ -1219,7 +1219,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
 
 ___
 
@@ -1238,7 +1238,7 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
 
 ___
 
@@ -1261,4 +1261,4 @@ ___
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)
+[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)

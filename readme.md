@@ -73,6 +73,10 @@ console.log({
 */
 ```
 
+### [Docs:](./docs/modules.md)
+
+Documentation is still a work in progress, but can be found in the [modules.md](./docs/modules.md) file.
+
 ### TODO:
 
 - [ ] Add more examples

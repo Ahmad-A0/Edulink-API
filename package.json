@@ -17,7 +17,7 @@
     "build": "del-cli build && tsc",
     "dev-build": "npm run build && npm run docs",
     "build-watch": "npm run build && tsc -w",
-    "docs": "typedoc --options typedoc.json",
+    "docs": "typedoc --options typedoc.json src/index.ts",
     "release": "npm run build && npm run format && npm run docs && npm publish",
     "prepare": "npm run build",
     "format": "prettier --write ."
@@ -41,8 +41,7 @@
     "eledoc": "^0.2.1",
     "prettier": "^2.5.1",
     "typedoc": "^0.22.10",
-    "typedoc-plugin-markdown": "^3.11.11",
-    "typedoc-plugin-rename-defaults": "^0.4.0"
+    "typedoc-plugin-markdown": "^3.11.11"
   },
   "bugs": {
     "url": "https://github.com/Ahmad-A0/Edulink-API/issues"
