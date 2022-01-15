@@ -2,7 +2,6 @@ type Edulink_Login = {
   jsonrpc: string;
   id: string;
   result: {
-    error?: string;
     api_version: number;
     establishment: {
       logo: string;

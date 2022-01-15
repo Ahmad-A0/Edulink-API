@@ -1,7 +1,9 @@
 import Edulink_Raw from '../Raw_Edulink_Requests/Edulink_Raw.js';
 import Edulink_Login from '../Raw_Edulink_Response_Types/Edulink_Login.js';
 import School_FromCode from '../Raw_Edulink_Response_Types/School_FromCode.js';
-import Edulink_Timetable from '../Raw_Edulink_Response_Types/Edulink_Timetable.js';
+import Edulink_Timetable, {
+  Edulink_Timetable_Lesson,
+} from '../Raw_Edulink_Response_Types/Edulink_Timetable.js';
 
 class Edulink_API {
   isAuthenticated: boolean;
@@ -11,7 +13,7 @@ class Edulink_API {
   Raw_Responses: {
     Login_Raw_Response?: Edulink_Login;
     School_FromCode_Raw_Response?: School_FromCode;
-    Timetable_Raw_Response?: Edulink_Timetable;
+    Timetable_Raw_Responses: Edulink_Timetable[];
   };
 
   // TODO: Stop prettier from formatting this
@@ -32,6 +34,7 @@ class Edulink_API {
         room: { code: string; name: string };
       }
     >;
+    period_id_to_lesson: Map<number, Edulink_Timetable_Lesson>;
   };
 
   /**
@@ -52,7 +55,7 @@ class Edulink_API {
     this.keepAlive = undefined;
 
     this.Edulink_Raw = new Edulink_Raw();
-    this.Raw_Responses = {};
+    this.Raw_Responses = { Timetable_Raw_Responses: [] };
   }
 
   async Authenticate(
@@ -83,7 +86,8 @@ class Edulink_API {
     this.Raw_Responses.Login_Raw_Response = await this.Edulink_Raw.Login(
       username,
       password,
-      this.Raw_Responses.School_FromCode_Raw_Response.result.school.school_id
+      this.Raw_Responses.School_FromCode_Raw_Response.result.school.school_id,
+      this.Raw_Responses.School_FromCode_Raw_Response.result.school.server
     );
 
     if (!this.Raw_Responses.Login_Raw_Response.result.success) {
@@ -93,7 +97,7 @@ class Edulink_API {
     }
 
     //* Initializing the Edulink_Raw object with the authentication results
-    this.Edulink_Raw.initialize(
+    await this.Edulink_Raw.initialize(
       this.Raw_Responses.Login_Raw_Response.result.authtoken,
       this.Raw_Responses.Login_Raw_Response.result.user.id,
       this.Raw_Responses.School_FromCode_Raw_Response.result.school.server
@@ -128,6 +132,7 @@ class Edulink_API {
       community_group_id_to_community_group: new Map(),
       teaching_group_id_to_teaching_group: new Map(),
       form_group_id_to_form_group: new Map(),
+      period_id_to_lesson: new Map(),
     };
 
     for (const { id, code, name } of this.Raw_Responses.Login_Raw_Response
@@ -182,22 +187,102 @@ class Edulink_API {
 
   /**
    * Returns the timetable of the user from a given date
-   * @param date A date in the format `YYYY-MM-DD`
+   * @param startDate A date in the format `YYYY-MM-DD`
    * TODO: @returns
    */
-  async Timetable(date?: string) {
+  async Timetable(
+    startDate?: string,
+    endDate?: string,
+    includeOverflow: boolean = false
+  ): Promise<
+    {
+      date: string;
+      day_name: string;
+      lessons: {
+        lesson_name: string;
+        lesson_room: string;
+        period_name: string;
+        start_time: string;
+        end_time: string;
+        teacher: string;
+      }[];
+    }[]
+  > {
     // Setting the date to today if no date is given
-    date = date ?? new Date().toISOString().split('T')[0] ?? '';
+    startDate = startDate ?? new Date().toISOString().split('T')[0] ?? '';
 
-    // Getting the timetable
-    this.Raw_Responses.Timetable_Raw_Response =
-      await this.Edulink_Raw.Timetable(date);
+    // Setting the end date to 0 if no end date is given, this is so that we only query the api once
+    const endDateTime = new Date(endDate ?? '1970-01-01').getTime();
 
-    if (!this.Raw_Responses.Timetable_Raw_Response.result.success) {
-      throw new Error(
-        `Failed to get the timetable for ${date} with error: ${this.Raw_Responses.Timetable_Raw_Response.result.error}`
-      );
+    // Setting the start time for the api query
+    let [showingToDateTime, showingToDate] = [
+      new Date(startDate).getTime(),
+      startDate,
+    ];
+
+    let allDays = [];
+    do {
+      const rawResponse = await this.Edulink_Raw.Timetable(showingToDate);
+      console.log(rawResponse.result);
+
+      this.Raw_Responses.Timetable_Raw_Responses.push(rawResponse);
+
+      if (!rawResponse.result.success) {
+        throw new Error(
+          `Failed to get the timetable for ${startDate} with error: ${rawResponse.result.error}`
+        );
+      }
+
+      allDays.push(...rawResponse.result.weeks.map(week => week.days).flat());
+
+      let newShowingToDate = new Date(rawResponse.result.showing_to).getTime();
+      showingToDate = rawResponse.result.showing_to;
+
+      // We get the same showing to date twice, we break the loop as there are no more events
+      if (newShowingToDate == showingToDateTime) break;
+      else showingToDateTime = newShowingToDate;
+    } while (endDateTime >= showingToDateTime);
+
+    // Remove any days that are later than the end date specified
+    if (!includeOverflow && endDate) {
+      for (let i = 0; i < allDays.length; i++) {
+        if (new Date(allDays[i]?.date ?? '').getTime() > endDateTime) {
+          allDays = allDays.slice(0, i);
+          break;
+        }
+      }
     }
+
+    let ret = [];
+    for (const day of allDays) {
+      let dayRet = [];
+
+      for (const lesson of day.lessons) {
+        // Populating the map from period id to lesson, this lets us get the lesson name and room from the id when we later iterate thorugh periods below
+        this.Maps.period_id_to_lesson.set(lesson.period_id, lesson);
+      }
+
+      for (const period of day.periods) {
+        const lesson = this.Maps.period_id_to_lesson.get(period.id);
+
+        dayRet.push({
+          lesson_name: lesson?.teaching_group.subject ?? '',
+          lesson_room: lesson?.room.name ?? '',
+          period_name: period.name,
+          start_time: period.start_time,
+          end_time: period.end_time,
+          teacher: lesson?.teachers ?? '',
+        });
+      }
+
+      ret.push({
+        date: day.date,
+        day_name: day.name,
+        lessons: dayRet,
+      });
+    }
+
+    return ret;
   }
 }
 

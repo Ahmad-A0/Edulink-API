@@ -456,9 +456,10 @@ export default class Edulink_Raw {
   async Login(
     username: string,
     password: string,
-    establishment_id: number
+    establishment_id: number,
+    server: string = this.school_server
   ): Promise<Edulink_Login> {
-    const url = method_server_url('Edulink.Login', this.school_server);
+    const url = method_server_url('Edulink.Login', server);
 
     const response = await axios.post(
       url,
