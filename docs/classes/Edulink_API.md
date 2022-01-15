@@ -33,7 +33,7 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 
 #### Defined in
 
-[API/API.ts:94](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L94)
+[API/API.ts:94](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L94)
 
 ## Properties
 
@@ -45,7 +45,7 @@ This is the [Edulink_Raw](Edulink_API.md#edulink_raw) instance that is used to m
 
 #### Defined in
 
-[API/API.ts:28](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L28)
+[API/API.ts:28](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L28)
 
 ___
 
@@ -68,7 +68,7 @@ This is used to store maps from ids to objects
 
 #### Defined in
 
-[API/API.ts:43](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L43)
+[API/API.ts:43](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L43)
 
 ___
 
@@ -88,7 +88,7 @@ This is used to store the raw_responses from the api calls
 
 #### Defined in
 
-[API/API.ts:33](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L33)
+[API/API.ts:33](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L33)
 
 ___
 
@@ -100,7 +100,7 @@ Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 #### Defined in
 
-[API/API.ts:18](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L18)
+[API/API.ts:18](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L18)
 
 ___
 
@@ -112,7 +112,7 @@ If this is true the server will be pinged every 5 minutes to keep the session al
 
 #### Defined in
 
-[API/API.ts:23](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L23)
+[API/API.ts:23](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L23)
 
 ___
 
@@ -136,7 +136,7 @@ This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is 
 
 #### Defined in
 
-[API/API.ts:85](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L85)
+[API/API.ts:85](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L85)
 
 ## Methods
 
@@ -162,7 +162,7 @@ A promise that resolves to an array of `[forename, surname, avatar]`
 
 #### Defined in
 
-[API/API.ts:108](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L108)
+[API/API.ts:108](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L108)
 
 ___
 
@@ -188,4 +188,4 @@ An array of objects that represent a date and its events
 
 #### Defined in
 
-[API/API.ts:242](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L242)
+[API/API.ts:242](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L242)
