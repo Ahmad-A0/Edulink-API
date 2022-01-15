@@ -23,6 +23,7 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 ### Methods
 
 - [Authenticate](Edulink_API.md#authenticate)
+- [Homework](Edulink_API.md#homework)
 - [Timetable](Edulink_API.md#timetable)
 
 ## Constructors
@@ -33,7 +34,7 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 
 #### Defined in
 
-[API/API.ts:94](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L94)
+[API/API.ts:96](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L96)
 
 ## Properties
 
@@ -45,7 +46,7 @@ This is the [Edulink_Raw](Edulink_API.md#edulink_raw) instance that is used to m
 
 #### Defined in
 
-[API/API.ts:28](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L28)
+[API/API.ts:29](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L29)
 
 ___
 
@@ -68,7 +69,7 @@ This is used to store maps from ids to objects
 
 #### Defined in
 
-[API/API.ts:43](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L43)
+[API/API.ts:45](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L45)
 
 ___
 
@@ -82,13 +83,14 @@ This is used to store the raw_responses from the api calls
 
 | Name | Type |
 | :------ | :------ |
+| `Homework_Raw_Response?` | [`Edulink_Homework`](../modules/Edulink_Raw_Response_Types.md#edulink_homework) |
 | `Login_Raw_Response?` | [`Edulink_Login`](../modules/Edulink_Raw_Response_Types.md#edulink_login) |
 | `School_FromCode_Raw_Response?` | [`School_FromCode`](../modules/Edulink_Raw_Response_Types.md#school_fromcode) |
 | `Timetable_Raw_Responses` | [`Edulink_Timetable`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable)[] |
 
 #### Defined in
 
-[API/API.ts:33](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L33)
+[API/API.ts:34](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L34)
 
 ___
 
@@ -100,7 +102,7 @@ Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 #### Defined in
 
-[API/API.ts:18](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L18)
+[API/API.ts:19](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L19)
 
 ___
 
@@ -112,7 +114,7 @@ If this is true the server will be pinged every 5 minutes to keep the session al
 
 #### Defined in
 
-[API/API.ts:23](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L23)
+[API/API.ts:24](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L24)
 
 ___
 
@@ -136,7 +138,7 @@ This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is 
 
 #### Defined in
 
-[API/API.ts:85](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L85)
+[API/API.ts:87](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L87)
 
 ## Methods
 
@@ -162,7 +164,32 @@ A promise that resolves to an array of `[forename, surname, avatar]`
 
 #### Defined in
 
-[API/API.ts:108](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L108)
+[API/API.ts:110](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L110)
+
+___
+
+### Homework
+
+▸ **Homework**(`includeCurrent?`, `includePast?`): `Promise`<{ `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string`  }[]\>
+
+Gets the homework for the authenticated user
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `includeCurrent` | `boolean` | `true` | Whether to include currently set homeworks |
+| `includePast` | `boolean` | `false` | Whether to include past homeworks |
+
+#### Returns
+
+`Promise`<{ `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string`  }[]\>
+
+An array of objects that represent a homework
+
+#### Defined in
+
+[API/API.ts:342](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L342)
 
 ___
 
@@ -188,4 +215,4 @@ An array of objects that represent a date and its events
 
 #### Defined in
 
-[API/API.ts:242](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a9197a3/src/API/API.ts#L242)
+[API/API.ts:244](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/b95c88b/src/API/API.ts#L244)

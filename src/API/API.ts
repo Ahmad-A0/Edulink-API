@@ -2,6 +2,7 @@ import { Edulink_Raw } from '../index.js';
 import {
   Edulink_Login,
   School_FromCode,
+  Edulink_Homework,
 } from '../Raw_Edulink_Response_Types/Edulink_Raw_Response_Types.js';
 import Edulink_Timetable, {
   Edulink_Timetable_Lesson,
@@ -33,6 +34,7 @@ class Edulink_API {
   Raw_Responses: {
     Login_Raw_Response?: Edulink_Login;
     School_FromCode_Raw_Response?: School_FromCode;
+    Homework_Raw_Response?: Edulink_Homework;
     Timetable_Raw_Responses: Edulink_Timetable[];
   };
 
@@ -272,9 +274,6 @@ class Edulink_API {
     let allDays = [];
     do {
       const rawResponse = await this.Edulink_Raw.Timetable(showingToDate);
-      console.log(rawResponse.result);
-
-      this.Raw_Responses.Timetable_Raw_Responses.push(rawResponse);
 
       if (!rawResponse.result.success) {
         throw new Error(
@@ -328,6 +327,55 @@ class Edulink_API {
         date: day.date,
         day_name: day.name,
         lessons: dayRet,
+      });
+    }
+
+    return ret;
+  }
+
+  /**
+   * Gets the homework for the authenticated user
+   * @param includeCurrent Whether to include currently set homeworks
+   * @param includePast Whether to include past homeworks
+   * @returns An array of objects that represent a homework
+   */
+  async Homework(
+    includeCurrent: boolean = true,
+    includePast: boolean = false
+  ): Promise<
+    {
+      title: string;
+      due_date: string;
+      subject: string;
+      description: string;
+      completed: boolean;
+      status: string;
+      set_by: string;
+    }[]
+  > {
+    let ret = [];
+
+    const rawResponse = await this.Edulink_Raw.Homework();
+    this.Raw_Responses.Homework_Raw_Response = rawResponse;
+
+    if (!rawResponse.result.success) {
+      throw new Error(
+        `Failed to get homework with error: ${rawResponse.result.error}`
+      );
+    }
+
+    for (const homework of [
+      ...(includeCurrent ? rawResponse.result.homework.current : []),
+      ...(includePast ? rawResponse.result.homework.past : []),
+    ]) {
+      ret.push({
+        title: homework.activity,
+        due_date: homework.due_date,
+        subject: homework.subject,
+        description: homework.description,
+        completed: homework.completed,
+        status: homework.status,
+        set_by: homework.set_by,
       });
     }
 
