@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { roughType } from '../build/Assorted_Tools/tools.js';
+import { roughType } from '../../build/Assorted_Tools/tools.js';
 // const { roughType } = require('../build/Assorted_Tools/tools');
 
 for (const file of readdirSync('.')) {

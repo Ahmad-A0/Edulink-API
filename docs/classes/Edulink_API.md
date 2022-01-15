@@ -1,31 +1,29 @@
-[edulink-api](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Edulink\_API
+[edulink-api](../README.md) / [Exports](../modules.md) / Edulink\_API
 
 # Class: Edulink\_API
 
-[index](../modules/index.md).Edulink_API
-
-This class is the main API class. It is an abstracton of the [Edulink_Raw](index.Edulink_API.md#edulink_raw) class.
-If you require more granular control over the API, you can use the [Edulink_Raw](index.Edulink_API.md#edulink_raw) class directly.
+This class is the main API class. It is an abstracton of the [Edulink_Raw](Edulink_API.md#edulink_raw) class.
+If you require more granular control over the API, you can use the [Edulink_Raw](Edulink_API.md#edulink_raw) class directly.
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](index.Edulink_API.md#constructor)
+- [constructor](Edulink_API.md#constructor)
 
 ### Properties
 
-- [Edulink\_Raw](index.Edulink_API.md#edulink_raw)
-- [Maps](index.Edulink_API.md#maps)
-- [Raw\_Responses](index.Edulink_API.md#raw_responses)
-- [isAuthenticated](index.Edulink_API.md#isauthenticated)
-- [keepAlive](index.Edulink_API.md#keepalive)
-- [userPermissions](index.Edulink_API.md#userpermissions)
+- [Edulink\_Raw](Edulink_API.md#edulink_raw)
+- [Maps](Edulink_API.md#maps)
+- [Raw\_Responses](Edulink_API.md#raw_responses)
+- [isAuthenticated](Edulink_API.md#isauthenticated)
+- [keepAlive](Edulink_API.md#keepalive)
+- [userPermissions](Edulink_API.md#userpermissions)
 
 ### Methods
 
-- [Authenticate](index.Edulink_API.md#authenticate)
-- [Timetable](index.Edulink_API.md#timetable)
+- [Authenticate](Edulink_API.md#authenticate)
+- [Timetable](Edulink_API.md#timetable)
 
 ## Constructors
 
@@ -35,19 +33,19 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 
 #### Defined in
 
-[API/API.ts:94](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L94)
+[API/API.ts:94](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L94)
 
 ## Properties
 
 ### Edulink\_Raw
 
-• **Edulink\_Raw**: [`Edulink_Raw`](index.Edulink_Raw.md)
+• **Edulink\_Raw**: [`Edulink_Raw`](Edulink_Raw.md)
 
-This is the [Edulink_Raw](index.Edulink_API.md#edulink_raw) instance that is used to make all the requests to the edulink api
+This is the [Edulink_Raw](Edulink_API.md#edulink_raw) instance that is used to make all the requests to the edulink api
 
 #### Defined in
 
-[API/API.ts:28](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L28)
+[API/API.ts:28](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L28)
 
 ___
 
@@ -63,14 +61,14 @@ This is used to store maps from ids to objects
 | :------ | :------ | :------ |
 | `community_group_id_to_community_group` | `Map`<`string`, { `name`: `string`  }\> | Maps from community group id to community_group |
 | `form_group_id_to_form_group` | `Map`<`string`, { `employee_id`: `string` ; `name`: `string` ; `room`: { `code`: `string` ; `name`: `string`  } ; `year_group_ids`: `string`[]  }\> | Maps from form group id to form_group |
-| `period_id_to_lesson` | `Map`<`number`, [`Edulink_Timetable_Lesson`](../modules/Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable_lesson)\> | Maps from period id to lesson, this is populated in {@link Edulink_API.getTimetable} |
+| `period_id_to_lesson` | `Map`<`number`, [`Edulink_Timetable_Lesson`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable_lesson)\> | Maps from period id to lesson, this is populated in {@link Edulink_API.getTimetable} |
 | `room_id_to_room` | `Map`<`string`, { `code`: `string` ; `name`: `string`  }\> | Maps from room id to room |
 | `teaching_group_id_to_teaching_group` | `Map`<`string`, { `employee_id`: `string` ; `name`: `string`  }\> | Maps from teaching group id to teaching_group |
 | `year_group_id_to_year_group` | `Map`<`string`, { `code`: `string` ; `name`: `string`  }\> | Maps from year group id to year_group |
 
 #### Defined in
 
-[API/API.ts:43](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L43)
+[API/API.ts:43](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L43)
 
 ___
 
@@ -84,13 +82,13 @@ This is used to store the raw_responses from the api calls
 
 | Name | Type |
 | :------ | :------ |
-| `Login_Raw_Response?` | [`Edulink_Login`](../modules/Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_login) |
-| `School_FromCode_Raw_Response?` | [`School_FromCode`](../modules/Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#school_fromcode) |
-| `Timetable_Raw_Responses` | [`Edulink_Timetable`](../modules/Raw_Edulink_Response_Types_Edulink_Raw_Response_Types.md#edulink_timetable)[] |
+| `Login_Raw_Response?` | [`Edulink_Login`](../modules/Edulink_Raw_Response_Types.md#edulink_login) |
+| `School_FromCode_Raw_Response?` | [`School_FromCode`](../modules/Edulink_Raw_Response_Types.md#school_fromcode) |
+| `Timetable_Raw_Responses` | [`Edulink_Timetable`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable)[] |
 
 #### Defined in
 
-[API/API.ts:33](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L33)
+[API/API.ts:33](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L33)
 
 ___
 
@@ -98,11 +96,11 @@ ___
 
 • **isAuthenticated**: `boolean`
 
-Whether the [Edulink_API](index.Edulink_API.md) instance has been authenticated
+Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 #### Defined in
 
-[API/API.ts:18](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L18)
+[API/API.ts:18](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L18)
 
 ___
 
@@ -114,7 +112,7 @@ If this is true the server will be pinged every 5 minutes to keep the session al
 
 #### Defined in
 
-[API/API.ts:23](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L23)
+[API/API.ts:23](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L23)
 
 ___
 
@@ -123,7 +121,7 @@ ___
 • **userPermissions**: `Object`
 
 The full list of permissions the user has can be viewed in `this.Raw_Responses.Login_Raw_Response.result.capabilities`
-This is defined when [Edulink_API.Authenticate](index.Edulink_API.md#authenticate) is called
+This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is called
 
 #### Type declaration
 
@@ -138,7 +136,7 @@ This is defined when [Edulink_API.Authenticate](index.Edulink_API.md#authenticat
 
 #### Defined in
 
-[API/API.ts:85](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L85)
+[API/API.ts:85](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L85)
 
 ## Methods
 
@@ -154,7 +152,7 @@ This is defined when [Edulink_API.Authenticate](index.Edulink_API.md#authenticat
 | `param0.password` | `string` | `undefined` | - |
 | `param0.school_code` | `string` | `undefined` | - |
 | `param0.username` | `string` | `undefined` | - |
-| `keepAlive` | `boolean` | `false` | [Edulink_API.keepAlive](index.Edulink_API.md#keepalive) |
+| `keepAlive` | `boolean` | `false` | [Edulink_API.keepAlive](Edulink_API.md#keepalive) |
 
 #### Returns
 
@@ -164,7 +162,7 @@ A promise that resolves to an array of `[forename, surname, avatar]`
 
 #### Defined in
 
-[API/API.ts:108](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L108)
+[API/API.ts:108](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L108)
 
 ___
 
@@ -190,4 +188,4 @@ An array of objects that represent a date and its events
 
 #### Defined in
 
-[API/API.ts:242](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3f54d35/src/API/API.ts#L242)
+[API/API.ts:242](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/546b5fb/src/API/API.ts#L242)
