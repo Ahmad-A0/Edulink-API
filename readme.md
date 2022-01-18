@@ -1,10 +1,8 @@
-# edulink-api _[*under construction*]_
+# Edulink-API
 
 > An Unofficial API for OvernetData's [Edulink](https://www.edulinkone.com/).
 
-## Overview
-
-This API is an unofficial API for OvernetData's Edulink. It is not supported by Edulink and is subject to change without notice.
+This API provides abstractions over the undocumented Edulink API. It is not official and could be subject to breaking changes.
 
 ## Contents
 
@@ -125,14 +123,12 @@ console.log(lessons.map(lesson => [lesson.start_time, lesson.lesson_name]));
 */
 ```
 
-### [Docs:](./docs/modules.md)
+### Docs:
 
 Documentation is still a work in progress, the documentation readme can be found in the [modules.md](./docs/modules.md) file. Direct links to the documentation are also available below.
 
-- [`Edulink_API` class](./docs/classes/Edulink_API.md) This is the main API interface, shown in the examples above.
-
-- [`Edulink_Raw` class](./docs/classes/Edulink_Raw.md) This class houses the raw requests to Edulink it can be used if you want more granular control over the requests, or if you want to use a feature that is not yet implemented.
-
+- [`Edulink_API`](./docs/classes/Edulink_API.md) class This is the main API interface, shown in the examples above.
+- [`Edulink_Raw`](./docs/classes/Edulink_Raw.md) class This class houses the raw requests to Edulink it can be used if you want more granular control over the requests, or if you want to use a feature that is not yet implemented.
 - [`Edulink_Raw_Response_Types`](./docs/modules/Edulink_Raw_Response_Types.md) This module contains the response types that are returned by the Edulink API.
 
 ### TODO:
@@ -140,8 +136,7 @@ Documentation is still a work in progress, the documentation readme can be found
 - [ ] Add more examples
 - [x] Document the API
 - [ ] Add missing methods
-- [ ] Improve error messages
-- [ ] Add more abstractions, if login fails the user shouldn't have to parse the error message themselves
+- [x] Improve error messages
 - [ ] Add missing return type properties, because of the way the types were created some properties that could be returned might not exist.
 - [ ] I used the edulink DEMO when creating types and methods. This turns out to be really outdated and is missing a lot of properties. I will need to re do these types using the API with a real login.
 - [x] Update examples
