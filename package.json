@@ -1,7 +1,7 @@
 {
   "author": "Ahmad-A0",
   "name": "edulink-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",
@@ -38,7 +38,6 @@
     "@types/uuid": "^8.3.4",
     "del-cli": "^4.0.1",
     "dotenv": "^10.0.0",
-    "eledoc": "^0.2.1",
     "prettier": "^2.5.1",
     "typedoc": "^0.22.10",
     "typedoc-plugin-markdown": "^3.11.11"
