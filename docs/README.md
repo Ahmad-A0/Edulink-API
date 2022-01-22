@@ -6,6 +6,8 @@ edulink-api / [Exports](modules.md)
 
 This API provides abstractions over the undocumented Edulink API. It is not official and could be subject to breaking changes.
 
+The [`Edulink_API`](./docs/classes/Edulink_API.md) class is the main API class, it provides heavy abstractions over the raw data returned by Edulink. The [Edulink_Raw](./docs/classes/Edulink_Raw.md) class houses the raw requests to the edulink API.
+
 ## Contents
 
 - [Examples](#usage-examples)
@@ -16,6 +18,7 @@ This API provides abstractions over the undocumented Edulink API. It is not offi
   - [Getting tomorrow's lessons](#getting-tomorrows-lessons)
 
 - [Full Documentation](#docs)
+
   - [`Edulink_API` class](./docs/classes/Edulink_API.md)
   - [`Edulink_Raw` class](./docs/classes/Edulink_Raw.md)
   - [`Edulink_Raw_Response_Types`](./docs/modules/Edulink_Raw_Response_Types.md)
@@ -130,7 +133,34 @@ console.log(lessons.map(lesson => [lesson.start_time, lesson.lesson_name]));
 Documentation is still a work in progress, the documentation readme can be found in the [modules.md](./docs/modules.md) file. Direct links to the documentation are also available below.
 
 - [`Edulink_API`](./docs/classes/Edulink_API.md) class This is the main API interface, shown in the examples above.
+
+  - [Authenticate](Edulink_API.md#authenticate)
+  - [Homework](Edulink_API.md#homework)
+  - [Timetable](Edulink_API.md#timetable)
+
 - [`Edulink_Raw`](./docs/classes/Edulink_Raw.md) class This class houses the raw requests to Edulink it can be used if you want more granular control over the requests, or if you want to use a feature that is not yet implemented.
+
+  - [Achievement](./docs/classes/Edulink_Raw.md#achievement)
+  - [AchievementBehaviourLookups](./docs/classes/Edulink_Raw.md#achievementbehaviourlookups)
+  - [Attendance](./docs/classes/Edulink_Raw.md#attendance)
+  - [Behaviour](./docs/classes/Edulink_Raw.md#behaviour)
+  - [Catering](./docs/classes/Edulink_Raw.md#catering)
+  - [Clubs](./docs/classes/Edulink_Raw.md#clubs)
+  - [Documents](./docs/classes/Edulink_Raw.md#documents)
+  - [Exams](./docs/classes/Edulink_Raw.md#exams)
+  - [ExternalLinks](./docs/classes/Edulink_Raw.md#externallinks)
+  - [Homework](./docs/classes/Edulink_Raw.md#homework)
+  - [Login](./docs/classes/Edulink_Raw.md#login)
+  - [Logout](./docs/classes/Edulink_Raw.md#logout)
+  - [Personal](./docs/classes/Edulink_Raw.md#personal)
+  - [Ping](./docs/classes/Edulink_Raw.md#ping)
+  - [RegisterCodes](./docs/classes/Edulink_Raw.md#registercodes)
+  - [SchoolDetails](./docs/classes/Edulink_Raw.md#schooldetails)
+  - [School_FromCode](./docs/classes/Edulink_Raw.md#school_fromcode)
+  - [Status](./docs/classes/Edulink_Raw.md#status)
+  - [Timetable](./docs/classes/Edulink_Raw.md#timetable)
+  - [initialize](./docs/classes/Edulink_Raw.md#initialize)
+
 - [`Edulink_Raw_Response_Types`](./docs/modules/Edulink_Raw_Response_Types.md) This module contains the response types that are returned by the Edulink API.
 
 ### TODO:
