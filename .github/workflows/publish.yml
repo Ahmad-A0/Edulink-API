@@ -1,10 +1,10 @@
 name: '🚀 release'
 
 on:
-  workflow-dispatch:
+  - workflow_dispatch:
     branches:
       - master
-  release:
+  - release:
     types: [published]
 
 jobs:
