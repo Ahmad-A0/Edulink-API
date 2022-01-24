@@ -27,15 +27,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org
 
+      - name: 🚀 publish
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+        run: npm publish --access public
+        working-directory: my-package
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+
       - name: debug
         run: |
           echo "👾 debug info"
           ls -a
           node -v
           npm -v
-
-      - name: 🚀 publish
-        run: npm publish --access public
-        working-directory: my-package
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
