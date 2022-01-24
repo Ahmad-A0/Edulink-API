@@ -109,7 +109,7 @@ const tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
   .split('T')[0];
 
 // Get the lessons from tomorrow
-// after we get the response we get the 0th element, the first day, and access it's lessons
+// after we get the response we get the 0th element, the first day, and access its lessons
 const lessons = (await edulink_api.Timetable(tomorrow))[0].lessons;
 
 console.log(lessons.map(lesson => [lesson.start_time, lesson.lesson_name]));

@@ -87,7 +87,9 @@ console.log(latest_homework);
   description: "Complete and hand in the questions on page 60",
   completed: false,
   status: 'Not submitted',
-  set_by: 'teacher_name'
+  set_by: 'teacher_name',
+  due_text: 'Due in 3 days',
+  available_date: '2022-01-16 00:00:00',
 }
 */
 ```
@@ -109,7 +111,7 @@ const tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
   .split('T')[0];
 
 // Get the lessons from tomorrow
-// after we get the response we get the 0th element, the first day, and access it's lessons
+// after we get the response we get the 0th element, the first day, and access its lessons
 const lessons = (await edulink_api.Timetable(tomorrow))[0].lessons;
 
 console.log(lessons.map(lesson => [lesson.start_time, lesson.lesson_name]));
@@ -172,3 +174,4 @@ Documentation is still a work in progress, the documentation readme can be found
 - [ ] Add missing return type properties, because of the way the types were created some properties that could be returned might not exist.
 - [ ] I used the edulink DEMO when creating types and methods. This turns out to be really outdated and is missing a lot of properties. I will need to re do these types using the API with a real login.
 - [x] Update examples
+- [ ] Missing Homework Descriptions, some homeworks need an additional `Homework_Details` request to get the description.
