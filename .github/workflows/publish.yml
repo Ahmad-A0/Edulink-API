@@ -2,8 +2,6 @@ name: '🚀 release'
 
 on:
   - workflow_dispatch:
-    branches:
-      - master
   - release:
     types: [published]
 
