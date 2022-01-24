@@ -1,7 +1,7 @@
 {
   "author": "Ahmad-A0",
   "name": "edulink-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",
@@ -18,7 +18,7 @@
     "dev-build": "npm run build && npm run docs",
     "build-watch": "npm run build && tsc -w",
     "docs": "typedoc --options typedoc.json src/index.ts",
-    "release": "npm run build && npm run format && npm run docs && npm publish",
+    "release-prep": "npm run build && npm run format && npm run docs && npm run format",
     "prepare": "npm run build",
     "format": "prettier --write ."
   },
