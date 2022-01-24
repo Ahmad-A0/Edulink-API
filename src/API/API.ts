@@ -351,6 +351,8 @@ class Edulink_API {
       completed: boolean;
       status: string;
       set_by: string;
+      due_text: string;
+      available_date: string;
     }[]
   > {
     let ret = [];
@@ -376,6 +378,8 @@ class Edulink_API {
         completed: homework.completed,
         status: homework.status,
         set_by: homework.set_by,
+        due_text: homework.due_text,
+        available_date: homework.available_date,
       });
     }
 
