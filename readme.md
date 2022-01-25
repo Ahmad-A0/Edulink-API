@@ -37,7 +37,7 @@ import Edulink_API from 'edulink-api';
 
 ### Creating the API object and authenticating:
 
-You need to login to Edulink first. Before using the API methods. This is done like this:
+You need to login to Edulink first before using the API methods. This is done like this:
 
 ```javascript
 const edulink_api = new Edulink_API();
