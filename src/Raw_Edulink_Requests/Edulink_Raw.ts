@@ -352,6 +352,40 @@ export default class Edulink_Raw {
   }
 
   /**
+   * Change the completion status of a homework
+   * @param homework_id The id of the homework to change completion for
+   * @param complete A boolean representing whether the homework's new completion status
+   * @returns //TODO: Add return type
+   */
+  async HomeworkCompleted(homework_id: number, complete: boolean) {
+    const url = method_server_url(
+      'Edulink.HomeworkCompleted',
+      this.school_server
+    );
+
+    const response = await axios.post(
+      url,
+      {
+        method: 'EduLink.HomeworkCompleted',
+        params: {
+          complete: complete.toString(),
+          homework_id: homework_id,
+          learner_id: this.learner_id,
+        },
+        ...this.generic_data,
+      },
+      {
+        headers: {
+          'X-API-Method': 'EduLink.HomeworkCompleted',
+          ...this.generic_header,
+        },
+      }
+    );
+
+    return handleResponse(response);
+  }
+
+  /**
    * Returns the data from the `external links` section of edulink
    * @returns A promise that resolves to the {@link Edulink_ExternalLinks} response
    */

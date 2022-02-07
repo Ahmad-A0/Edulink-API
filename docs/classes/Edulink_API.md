@@ -1,6 +1,6 @@
-[edulink-api](../README.md) / [Exports](../modules.md) / Edulink_API
+[edulink-api](../README.md) / [Exports](../modules.md) / Edulink\_API
 
-# Class: Edulink_API
+# Class: Edulink\_API
 
 This class is the main API class. It is an abstracton of the [Edulink_Raw](Edulink_API.md#edulink_raw) class.
 If you require more granular control over the API, you can use the [Edulink_Raw](Edulink_API.md#edulink_raw) class directly.
@@ -13,9 +13,9 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 
 ### Properties
 
-- [Edulink_Raw](Edulink_API.md#edulink_raw)
+- [Edulink\_Raw](Edulink_API.md#edulink_raw)
 - [Maps](Edulink_API.md#maps)
-- [Raw_Responses](Edulink_API.md#raw_responses)
+- [Raw\_Responses](Edulink_API.md#raw_responses)
 - [isAuthenticated](Edulink_API.md#isauthenticated)
 - [keepAlive](Edulink_API.md#keepalive)
 - [userPermissions](Edulink_API.md#userpermissions)
@@ -34,21 +34,21 @@ If you require more granular control over the API, you can use the [Edulink_Raw]
 
 #### Defined in
 
-[API/API.ts:96](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L96)
+[API/API.ts:96](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L96)
 
 ## Properties
 
-### Edulink_Raw
+### Edulink\_Raw
 
-• **Edulink_Raw**: [`Edulink_Raw`](Edulink_Raw.md)
+• **Edulink\_Raw**: [`Edulink_Raw`](Edulink_Raw.md)
 
 This is the [Edulink_Raw](Edulink_API.md#edulink_raw) instance that is used to make all the requests to the edulink api
 
 #### Defined in
 
-[API/API.ts:29](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L29)
+[API/API.ts:29](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L29)
 
----
+___
 
 ### Maps
 
@@ -58,41 +58,41 @@ This is used to store maps from ids to objects
 
 #### Type declaration
 
-| Name                                    | Type                                                                                                                                              | Description                                                                          |
-| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------- |
-| `community_group_id_to_community_group` | `Map`<`string`, { `name`: `string` }\>                                                                                                            | Maps from community group id to community_group                                      |
-| `form_group_id_to_form_group`           | `Map`<`string`, { `employee_id`: `string` ; `name`: `string` ; `room`: { `code`: `string` ; `name`: `string` } ; `year_group_ids`: `string`[] }\> | Maps from form group id to form_group                                                |
-| `period_id_to_lesson`                   | `Map`<`number`, [`Edulink_Timetable_Lesson`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable_lesson)\>                                 | Maps from period id to lesson, this is populated in {@link Edulink_API.getTimetable} |
-| `room_id_to_room`                       | `Map`<`string`, { `code`: `string` ; `name`: `string` }\>                                                                                         | Maps from room id to room                                                            |
-| `teaching_group_id_to_teaching_group`   | `Map`<`string`, { `employee_id`: `string` ; `name`: `string` }\>                                                                                  | Maps from teaching group id to teaching_group                                        |
-| `year_group_id_to_year_group`           | `Map`<`string`, { `code`: `string` ; `name`: `string` }\>                                                                                         | Maps from year group id to year_group                                                |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `community_group_id_to_community_group` | `Map`<`string`, { `name`: `string`  }\> | Maps from community group id to community_group |
+| `form_group_id_to_form_group` | `Map`<`string`, { `employee_id`: `string` ; `name`: `string` ; `room`: { `code`: `string` ; `name`: `string`  } ; `year_group_ids`: `string`[]  }\> | Maps from form group id to form_group |
+| `period_id_to_lesson` | `Map`<`number`, [`Edulink_Timetable_Lesson`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable_lesson)\> | Maps from period id to lesson, this is populated in {@link Edulink_API.getTimetable} |
+| `room_id_to_room` | `Map`<`string`, { `code`: `string` ; `name`: `string`  }\> | Maps from room id to room |
+| `teaching_group_id_to_teaching_group` | `Map`<`string`, { `employee_id`: `string` ; `name`: `string`  }\> | Maps from teaching group id to teaching_group |
+| `year_group_id_to_year_group` | `Map`<`string`, { `code`: `string` ; `name`: `string`  }\> | Maps from year group id to year_group |
 
 #### Defined in
 
-[API/API.ts:45](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L45)
+[API/API.ts:45](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L45)
 
----
+___
 
-### Raw_Responses
+### Raw\_Responses
 
-• **Raw_Responses**: `Object`
+• **Raw\_Responses**: `Object`
 
 This is used to store the raw_responses from the api calls
 
 #### Type declaration
 
-| Name                            | Type                                                                                |
-| :------------------------------ | :---------------------------------------------------------------------------------- |
-| `Homework_Raw_Response?`        | [`Edulink_Homework`](../modules/Edulink_Raw_Response_Types.md#edulink_homework)     |
-| `Login_Raw_Response?`           | [`Edulink_Login`](../modules/Edulink_Raw_Response_Types.md#edulink_login)           |
-| `School_FromCode_Raw_Response?` | [`School_FromCode`](../modules/Edulink_Raw_Response_Types.md#school_fromcode)       |
-| `Timetable_Raw_Responses`       | [`Edulink_Timetable`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable)[] |
+| Name | Type |
+| :------ | :------ |
+| `Homework_Raw_Response?` | [`Edulink_Homework`](../modules/Edulink_Raw_Response_Types.md#edulink_homework) |
+| `Login_Raw_Response?` | [`Edulink_Login`](../modules/Edulink_Raw_Response_Types.md#edulink_login) |
+| `School_FromCode_Raw_Response?` | [`School_FromCode`](../modules/Edulink_Raw_Response_Types.md#school_fromcode) |
+| `Timetable_Raw_Responses` | [`Edulink_Timetable`](../modules/Edulink_Raw_Response_Types.md#edulink_timetable)[] |
 
 #### Defined in
 
-[API/API.ts:34](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L34)
+[API/API.ts:34](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L34)
 
----
+___
 
 ### isAuthenticated
 
@@ -102,9 +102,9 @@ Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 #### Defined in
 
-[API/API.ts:19](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L19)
+[API/API.ts:19](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L19)
 
----
+___
 
 ### keepAlive
 
@@ -114,9 +114,9 @@ If this is true the server will be pinged every 5 minutes to keep the session al
 
 #### Defined in
 
-[API/API.ts:24](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L24)
+[API/API.ts:24](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L24)
 
----
+___
 
 ### userPermissions
 
@@ -127,18 +127,18 @@ This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is 
 
 #### Type declaration
 
-| Name                     | Type      |
-| :----------------------- | :-------- |
-| `can_change_password`    | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `can_change_password` | `boolean` |
 | `can_create_achievement` | `boolean` |
-| `can_create_behaviour`   | `boolean` |
-| `can_create_club`        | `boolean` |
-| `can_create_homework`    | `boolean` |
-| `can_create_messages`    | `boolean` |
+| `can_create_behaviour` | `boolean` |
+| `can_create_club` | `boolean` |
+| `can_create_homework` | `boolean` |
+| `can_create_messages` | `boolean` |
 
 #### Defined in
 
-[API/API.ts:87](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L87)
+[API/API.ts:87](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L87)
 
 ## Methods
 
@@ -148,13 +148,13 @@ This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is 
 
 #### Parameters
 
-| Name                 | Type      | Default value | Description                                                                                                                               |
-| :------------------- | :-------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| `param0`             | `Object`  | `undefined`   | The school_code, username and password to use to authenticate, if you don't know your school_code your school's postcode can also be used |
-| `param0.password`    | `string`  | `undefined`   | -                                                                                                                                         |
-| `param0.school_code` | `string`  | `undefined`   | -                                                                                                                                         |
-| `param0.username`    | `string`  | `undefined`   | -                                                                                                                                         |
-| `keepAlive`          | `boolean` | `false`       | [Edulink_API.keepAlive](Edulink_API.md#keepalive)                                                                                         |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `param0` | `Object` | `undefined` | The school_code, username and password to use to authenticate, if you don't know your school_code your school's postcode can also be used |
+| `param0.password` | `string` | `undefined` | - |
+| `param0.school_code` | `string` | `undefined` | - |
+| `param0.username` | `string` | `undefined` | - |
+| `keepAlive` | `boolean` | `false` | [Edulink_API.keepAlive](Edulink_API.md#keepalive) |
 
 #### Returns
 
@@ -164,55 +164,55 @@ A promise that resolves to an array of `[forename, surname, avatar]`
 
 #### Defined in
 
-[API/API.ts:110](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L110)
+[API/API.ts:110](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L110)
 
----
+___
 
 ### Homework
 
-▸ **Homework**(`includeCurrent?`, `includePast?`): `Promise`<{ `available_date`: `string` ; `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_text`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string` }[]\>
+▸ **Homework**(`includeCurrent?`, `includePast?`): `Promise`<{ `available_date`: `string` ; `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_text`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string` ; `mark_complete`: () => `void` ; `mark_incomplete`: () => `void`  }[]\>
 
 Gets the homework for the authenticated user
 
 #### Parameters
 
-| Name             | Type      | Default value | Description                                |
-| :--------------- | :-------- | :------------ | :----------------------------------------- |
-| `includeCurrent` | `boolean` | `true`        | Whether to include currently set homeworks |
-| `includePast`    | `boolean` | `false`       | Whether to include past homeworks          |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `includeCurrent` | `boolean` | `true` | Whether to include currently set homeworks |
+| `includePast` | `boolean` | `false` | Whether to include past homeworks |
 
 #### Returns
 
-`Promise`<{ `available_date`: `string` ; `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_text`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string` }[]\>
+`Promise`<{ `available_date`: `string` ; `completed`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_text`: `string` ; `set_by`: `string` ; `status`: `string` ; `subject`: `string` ; `title`: `string` ; `mark_complete`: () => `void` ; `mark_incomplete`: () => `void`  }[]\>
 
 An array of objects that represent a homework
 
 #### Defined in
 
-[API/API.ts:342](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L342)
+[API/API.ts:342](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L342)
 
----
+___
 
 ### Timetable
 
-▸ **Timetable**(`startDate?`, `endDate?`, `includeOverflow?`): `Promise`<{ `date`: `string` ; `day_name`: `string` ; `lessons`: { `end_time`: `string` ; `lesson_name`: `string` ; `lesson_room`: `string` ; `period_name`: `string` ; `start_time`: `string` ; `teacher`: `string` }[] }[]\>
+▸ **Timetable**(`startDate?`, `endDate?`, `includeOverflow?`): `Promise`<{ `date`: `string` ; `day_name`: `string` ; `lessons`: { `end_time`: `string` ; `lesson_name`: `string` ; `lesson_room`: `string` ; `period_name`: `string` ; `start_time`: `string` ; `teacher`: `string`  }[]  }[]\>
 
 Returns the timetable of the user from a given date
 
 #### Parameters
 
-| Name              | Type      | Default value | Description                                                                                                                                       |
-| :---------------- | :-------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `startDate?`      | `string`  | `undefined`   | A date in the format `YYYY-MM-DD` to start the events in the timetable from                                                                       |
-| `endDate?`        | `string`  | `undefined`   | A date in the format `YYYY-MM-DD` to end the timetable in the timetable from                                                                      |
-| `includeOverflow` | `boolean` | `false`       | Include events that are outside the end dates included because they are in the same week as the end date, this is ony used if endDate is provided |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `startDate?` | `string` | `undefined` | A date in the format `YYYY-MM-DD` to start the events in the timetable from |
+| `endDate?` | `string` | `undefined` | A date in the format `YYYY-MM-DD` to end the timetable in the timetable from |
+| `includeOverflow` | `boolean` | `false` | Include events that are outside the end dates included because they are in the same week as the end date, this is ony used if endDate is provided |
 
 #### Returns
 
-`Promise`<{ `date`: `string` ; `day_name`: `string` ; `lessons`: { `end_time`: `string` ; `lesson_name`: `string` ; `lesson_room`: `string` ; `period_name`: `string` ; `start_time`: `string` ; `teacher`: `string` }[] }[]\>
+`Promise`<{ `date`: `string` ; `day_name`: `string` ; `lessons`: { `end_time`: `string` ; `lesson_name`: `string` ; `lesson_room`: `string` ; `period_name`: `string` ; `start_time`: `string` ; `teacher`: `string`  }[]  }[]\>
 
 An array of objects that represent a date and its events
 
 #### Defined in
 
-[API/API.ts:244](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/3d2f145/src/API/API.ts#L244)
+[API/API.ts:244](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/a4f7784/src/API/API.ts#L244)
