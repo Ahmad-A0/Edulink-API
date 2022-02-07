@@ -10,12 +10,12 @@
 
 ### Namespaces
 
-- [Edulink_Raw_Response_Types](modules/Edulink_Raw_Response_Types.md)
+- [Edulink\_Raw\_Response\_Types](modules/Edulink_Raw_Response_Types.md)
 
 ### Classes
 
-- [Edulink_API](classes/Edulink_API.md)
-- [Edulink_Raw](classes/Edulink_Raw.md)
+- [Edulink\_API](classes/Edulink_API.md)
+- [Edulink\_Raw](classes/Edulink_Raw.md)
 
 ## References
 

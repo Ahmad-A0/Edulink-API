@@ -353,6 +353,8 @@ class Edulink_API {
       set_by: string;
       due_text: string;
       available_date: string;
+      mark_complete: () => void;
+      mark_incomplete: () => void;
     }[]
   > {
     let ret = [];
@@ -380,6 +382,10 @@ class Edulink_API {
         set_by: homework.set_by,
         due_text: homework.due_text,
         available_date: homework.available_date,
+        mark_complete: async () =>
+          await this.Edulink_Raw.HomeworkCompleted(homework.id, true),
+        mark_incomplete: async () =>
+          await this.Edulink_Raw.HomeworkCompleted(homework.id, false),
       });
     }
 
