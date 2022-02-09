@@ -353,8 +353,8 @@ class Edulink_API {
       set_by: string;
       due_text: string;
       available_date: string;
-      mark_complete: () => void;
-      mark_incomplete: () => void;
+      mark_complete: () => Promise<any>;
+      mark_incomplete: () => Promise<any>;
     }[]
   > {
     let ret = [];
