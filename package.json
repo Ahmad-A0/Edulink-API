@@ -1,7 +1,7 @@
 {
   "author": "Ahmad-A0",
   "name": "edulink-api",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",

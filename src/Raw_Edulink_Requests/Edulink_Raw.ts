@@ -70,10 +70,10 @@ export default class Edulink_Raw {
   /**
    * This returns some fields needed in the data section of the other requests
    */
-  private get generic_data(): { jsonrpc: string; id: number; uuid: string } {
+  private get generic_data(): { jsonrpc: string; id: string; uuid: string } {
     return {
       jsonrpc: '2.0',
-      id: 1,
+      id: '1',
       uuid: uuid(), //this.Authentication.uuid,
     };
   }
@@ -354,7 +354,7 @@ export default class Edulink_Raw {
   /**
    * Change the completion status of a homework
    * @param homework_id The id of the homework to change completion for
-   * @param complete A boolean representing whether the homework's new completion status
+   * @param complete A boolean representing the homework's new completion status
    * @returns //TODO: Add return type
    */
   async HomeworkCompleted(homework_id: number, complete: boolean) {
@@ -368,9 +368,10 @@ export default class Edulink_Raw {
       {
         method: 'EduLink.HomeworkCompleted',
         params: {
-          complete: complete.toString(),
+          completed: complete ? 'true' : 'false',
           homework_id: homework_id,
           learner_id: this.learner_id,
+          source: 'SIMS', //? This may need to be changed
         },
         ...this.generic_data,
       },
