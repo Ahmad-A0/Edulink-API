@@ -68,7 +68,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
+[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
 
 ---
 
@@ -96,7 +96,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
+[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
 
 ---
 
@@ -118,7 +118,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
 
 ---
 
@@ -160,7 +160,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
 
 ---
 
@@ -182,7 +182,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
 
 ---
 
@@ -215,7 +215,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
 
 ---
 
@@ -246,7 +246,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
 
 ---
 
@@ -267,7 +267,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
 
 ---
 
@@ -289,7 +289,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
 
 ---
 
@@ -314,7 +314,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
 
 ---
 
@@ -364,7 +364,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
 
 ---
 
@@ -560,7 +560,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
 
 ---
 
@@ -581,7 +581,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
 
 ---
 
@@ -612,7 +612,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
 
 ---
 
@@ -637,7 +637,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
 
 ---
 
@@ -666,7 +666,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Homework.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Homework.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L1)
 
 ---
 
@@ -693,7 +693,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
 
 ---
 
@@ -844,7 +844,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
 
 ---
 
@@ -864,7 +864,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
 
 ---
 
@@ -889,7 +889,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
 
 ---
 
@@ -956,7 +956,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
 
 ---
 
@@ -982,7 +982,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
 
 ---
 
@@ -1019,7 +1019,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
 
 ---
 
@@ -1054,7 +1054,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
 
 ---
 
@@ -1114,7 +1114,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
 
 ---
 
@@ -1140,7 +1140,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
 
 ---
 
@@ -1167,7 +1167,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
 
 ---
 
@@ -1188,7 +1188,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
 
 ---
 
@@ -1220,7 +1220,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
 
 ---
 
@@ -1239,7 +1239,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
 
 ---
 
@@ -1262,4 +1262,4 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6629dae/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)
+[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)
