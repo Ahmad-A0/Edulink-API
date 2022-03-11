@@ -30,6 +30,7 @@ import Edulink_Timetable, {
   Edulink_Timetable_Period,
 } from './Edulink_Timetable.js';
 import School_FromCode from './School_FromCode.js';
+import Edulink_HomeworkDetails from './Edulink_HomeworkDetails.js';
 
 export {
   Edulink_Timetable_Day,
@@ -63,4 +64,5 @@ export {
   Edulink_TeacherPhotos,
   Edulink_Timetable,
   School_FromCode,
+  Edulink_HomeworkDetails,
 };

@@ -8,6 +8,8 @@ import Edulink_Timetable, {
   Edulink_Timetable_Lesson,
 } from '../Raw_Edulink_Response_Types/Edulink_Timetable.js';
 
+import { convert } from 'html-to-text';
+
 /**
  * This class is the main API class. It is an abstracton of the {@link Edulink_Raw} class.
  * If you require more granular control over the API, you can use the {@link Edulink_Raw} class directly.
@@ -376,16 +378,37 @@ class Edulink_API {
         title: homework.activity,
         due_date: homework.due_date,
         subject: homework.subject,
-        description: homework.description,
+        description:
+          homework.description ??
+          convert(
+            (
+              await this.Edulink_Raw.HomeworkDetails(
+                homework.id,
+                homework.source
+              )
+            )?.result?.homework?.description || '',
+            {
+              preserveNewlines: true,
+              wordwrap: 10000,
+            }
+          ),
         completed: homework.completed,
         status: homework.status,
         set_by: homework.set_by,
         due_text: homework.due_text,
         available_date: homework.available_date,
         mark_complete: async () =>
-          await this.Edulink_Raw.HomeworkCompleted(homework.id, true),
+          await this.Edulink_Raw.HomeworkCompleted(
+            homework.id,
+            homework.source,
+            true
+          ),
         mark_incomplete: async () =>
-          await this.Edulink_Raw.HomeworkCompleted(homework.id, false),
+          await this.Edulink_Raw.HomeworkCompleted(
+            homework.id,
+            homework.source,
+            false
+          ),
       });
     }
 

@@ -1,3 +1,21 @@
+type Edulink_Homewok_Single = {
+  id: number;
+  due_text: string;
+  due_date: string;
+  available_date: string;
+  activity: string;
+  due_reminder: string;
+  subject: string;
+  icon: string;
+  description: string;
+  set_by: string;
+  source: 'SIMS' | 'EduLink'; // TODO: There may be more homework sources that I haven't seen yet
+  deletable: boolean;
+  cloneable: boolean;
+  status: string;
+  completed: boolean;
+};
+
 type Edulink_Homework = {
   jsonrpc: string;
   result: {
@@ -5,40 +23,8 @@ type Edulink_Homework = {
     method: string;
     success: boolean;
     homework: {
-      current: {
-        id: number;
-        due_text: string;
-        due_date: string;
-        available_date: string;
-        activity: string;
-        due_reminder: string;
-        subject: string;
-        icon: string;
-        description: string;
-        set_by: string;
-        source: string;
-        deletable: boolean;
-        cloneable: boolean;
-        status: string;
-        completed: boolean;
-      }[];
-      past: {
-        id: number;
-        due_text: string;
-        due_date: string;
-        available_date: string;
-        activity: string;
-        due_reminder: string;
-        subject: string;
-        icon: string;
-        description: string;
-        set_by: string;
-        source: string;
-        deletable: boolean;
-        cloneable: boolean;
-        status: string;
-        completed: boolean;
-      }[];
+      current: Edulink_Homewok_Single[];
+      past: Edulink_Homewok_Single[];
 
       report: {
         group_id: string;

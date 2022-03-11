@@ -26,6 +26,7 @@ import {
   Edulink_Status,
   Edulink_Timetable,
   School_FromCode,
+  Edulink_HomeworkDetails,
 } from '../Raw_Edulink_Response_Types/Edulink_Raw_Response_Types.js';
 
 /**
@@ -357,7 +358,11 @@ export default class Edulink_Raw {
    * @param complete A boolean representing the homework's new completion status
    * @returns //TODO: Add return type
    */
-  async HomeworkCompleted(homework_id: number, complete: boolean) {
+  async HomeworkCompleted(
+    homework_id: number,
+    homework_source: 'SIMS' | 'EduLink',
+    complete: boolean
+  ) {
     const url = method_server_url(
       'Edulink.HomeworkCompleted',
       this.school_server
@@ -371,13 +376,49 @@ export default class Edulink_Raw {
           completed: complete ? 'true' : 'false',
           homework_id: homework_id,
           learner_id: this.learner_id,
-          source: 'SIMS', //? This may need to be changed
+          source: homework_source,
         },
         ...this.generic_data,
       },
       {
         headers: {
           'X-API-Method': 'EduLink.HomeworkCompleted',
+          ...this.generic_header,
+        },
+      }
+    );
+
+    return handleResponse(response);
+  }
+
+  /**
+   * Request additional details about a homework
+   * @param homework_id The id of the homework to request details for
+   * @param source the way the homework was added normally through "SIMS" or "EduLink"
+   * @returns A promise that resolves to the {@link Edulink_HomeworkDetails} response
+   */
+  async HomeworkDetails(
+    homework_id: number | string,
+    source: 'EduLink' | 'SIMS'
+  ): Promise<Edulink_HomeworkDetails> {
+    const url = method_server_url(
+      'Edulink.HomeworkDetails',
+      this.school_server
+    );
+
+    const response = await axios.post(
+      url,
+      {
+        method: 'EduLink.HomeworkDetails',
+        params: {
+          homework_id: homework_id.toString(),
+          source: source,
+        },
+        ...this.generic_data,
+      },
+      {
+        headers: {
+          'X-API-Method': 'EduLink.HomeworkDetails',
           ...this.generic_header,
         },
       }

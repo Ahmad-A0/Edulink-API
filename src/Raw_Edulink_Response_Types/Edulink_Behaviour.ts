@@ -49,10 +49,10 @@ type Edulink_Behaviour = {
       type_ids: number[];
       activity_id: number;
       date: string;
-      time_id: 'object';
+      time_id: any;
       status_id: number;
-      bullying_type_id: 'object';
-      location_id: 'object';
+      bullying_type_id: any;
+      location_id: any;
       recorded: {
         employee_id: string;
         date: string;

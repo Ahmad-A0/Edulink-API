@@ -2,212 +2,26 @@
   "jsonrpc": "2.0",
   "id": "1",
   "result": {
-    "api_version": 1,
-    "establishment": {
-      "logo": "string",
-      "name": "Calday Grange Grammar School",
-      "rooms": [
-        {
-          "id": "141",
-          "code": "6QS",
-          "name": "Sixth Form Quiet Study"
-        }
-      ],
-      "community_groups": [
-        {
-          "id": "42",
-          "name": "Bennett"
-        }
-      ],
-      "discover_groups": [],
-      "applicant_admission_groups": [
-        {
-          "id": 8,
-          "name": "2005 - Autumn -  7 (A)"
-        }
-      ],
-      "applicant_intake_groups": [
-        {
-          "id": 9,
-          "name": "2006 - Autumn - 7"
-        }
-      ],
-      "form_groups": [
-        {
-          "id": "17799",
-          "name": "10BQ",
-          "year_group_ids": ["36"],
-          "employee_id": "23994",
-          "room_id": "81"
-        }
-      ],
-      "teaching_groups": [
-        {
-          "id": "34793",
-          "name": "10A/Ar1",
-          "employee_id": "236",
-          "year_group_ids": ["36"]
-        }
-      ],
-      "subjects": [
-        {
-          "id": "501",
-          "name": "Arabic",
-          "active": false
-        }
-      ],
-      "report_card_target_types": [
-        {
-          "id": 1,
-          "code": "PUNC",
-          "description": "Punctual"
-        }
-      ]
+    "homework": {
+      "id": "24886",
+      "activity": "MathsWatch Week 24 - Upper and Lower Bounds",
+      "description": "<p>Hi all,</p><p><br></p><p>MathsWatch homework now available.</p><p><br></p><p>Thanks.</p>",
+      "subject": "538",
+      "due_date": "2022-03-11",
+      "due_reminder": null,
+      "available_date": "2022-03-07 00:00:00",
+      "user_type": "employee",
+      "owner_id": "20200",
+      "format": 1,
+      "duration": null
     },
-    "authtoken": "string",
-    "user": {
-      "establishment_id": 2,
-      "id": "32159",
-      "gender": "Male",
-      "title": null,
-      "forename": "Ahmad",
-      "surname": "Adebowale",
-      "types": ["learner"],
-      "username": "adebowaleagm",
-      "community_group_id": "44",
-      "form_group_id": "469",
-      "year_group_id": "36",
-      "avatar": {
-        "width": 154,
-        "height": 200,
-        "photo": "string",
-        "cache": "none"
-      },
-      "remember_password_permitted": true
-    },
-    "analytics_enabled": [],
-    "personal_menu": [
-      {
-        "id": "timetable",
-        "name": "Timetable"
-      }
-    ],
-    "learner_menu": [],
-    "sub_menu": {
-      "label": "More"
-    },
-    "can_create_messages": false,
-    "can_create_message_types": [],
-    "login_method": "ldap",
-    "login_method_change_password": false,
-    "capabilities": {
-      "fcm": {
-        "remove_old_token": true
-      },
-      "data_collection": {
-        "move_cohabitees": true
-      },
-      "icalendar.group_import": false,
-      "communicator.enabled": true,
-      "communicator": {
-        "message_reply": true,
-        "email": {
-          "html": true,
-          "attachments": true
-        },
-        "parent_identification": {
-          "max_priority": "2",
-          "parental_responsibility": "true",
-          "options": {
-            "max_priority": {
-              "highest": "Highest",
-              "1": "1",
-              "2": "Up to 2",
-              "3": "Up to 3",
-              "4": "Up to 4",
-              "5": "Up to 5",
-              "6": "Up to 6",
-              "7": "Up to 7",
-              "8": "Up to 8",
-              "9": "Up to 9",
-              "10": "Up to 10",
-              "ignore": "Ignore"
-            }
-          }
-        }
-      },
-      "communicator.reply_to": false,
-      "communicator.switchuser": false,
-      "communicator.select_all": false,
-      "forms": {},
-      "communicator.create_message_types": [],
-      "communicator.new_message_recipients": [],
-      "parentevent.administrator": false,
-      "parentevent.switchteacher": false,
-      "parentevent.blockslot": true,
-      "parentevent.video": false,
-      "marksheets.change_teacher": false,
-      "resourcebooking.manager": false,
-      "achievement": {
-        "create": false
-      },
-      "behaviour": {
-        "create": false,
-        "report_card": {
-          "detail": false
-        }
-      },
-      "club": {
-        "create": false,
-        "export": false
-      },
-      "attendance": {
-        "today": false
-      },
-      "homework.create": false,
-      "homework.teaching_group_required": false,
-      "homework.learnercreate": true,
-      "homework.homework_issues": false,
-      "behaviour_detentionmanagement.session_create": false,
-      "behaviour_detentionmanagement.hide_learner_add": false,
-      "calendar.event_create": false,
-      "calendar.hide_sourcecog": true,
-      "attendance.absence_management": false,
-      "noticeboard": {
-        "manager": false,
-        "folders": true
-      }
-    },
-    "session": {
-      "expires": 1800
-    },
-    "miscellaneous": {
-      "upload": {
-        "chunksize": 100,
-        "max_attachment_size": 62914560,
-        "max_attachment_size_communicator": 31457280,
-        "max_body_size_communicator": 20971520
-      },
-      "max_status_last_visible": 5,
-      "status_interval_background": 0,
-      "session_expiry_modal": 120,
-      "status_interval": 60,
-      "status_in_background": false,
-      "student_count_warning": 50,
-      "app": {
-        "logout_on_pause": false
-      },
-      "editor": {
-        "defaultfont": "Helvetica"
-      }
-    },
-    "method": "EduLink.Login",
+    "method": "EduLink.HomeworkDetails",
     "success": true,
     "metrics": {
-      "st": "2022-01-11 21:16:00",
-      "sspt": 0.19647377300134394,
-      "sspt_us": 196473,
-      "uniqid": "61ddf390799b1",
+      "st": "2022-03-11 22:11:32",
+      "sspt": 0.017763506999472156,
+      "sspt_us": 17763,
+      "uniqid": "622bc9149a6e1",
       "be": "monty"
     }
   }

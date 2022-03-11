@@ -186,7 +186,7 @@ type Edulink_DataCollectionValues = {
         read_only: boolean;
         lookup_key: string;
         in_review: boolean;
-        data: 'object';
+        data: any;
         label: string;
       };
       home_language_id: {

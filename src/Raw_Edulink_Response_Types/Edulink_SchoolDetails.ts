@@ -1,4 +1,4 @@
-type School_Details = {
+type Edulink_SchoolDetails = {
   jsonrpc: string;
   id: string;
   result: {
@@ -25,4 +25,4 @@ type School_Details = {
   };
 };
 
-export default School_Details;
+export default Edulink_SchoolDetails;

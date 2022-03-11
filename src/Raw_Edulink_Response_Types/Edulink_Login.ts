@@ -59,7 +59,7 @@ type Edulink_Login = {
       establishment_id: number;
       id: string;
       gender: string;
-      title: 'object';
+      title: any;
       forename: string;
       surname: string;
       types: string[];

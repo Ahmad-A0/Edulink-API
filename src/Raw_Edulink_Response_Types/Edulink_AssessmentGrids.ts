@@ -17,7 +17,7 @@ type Edulink_AssessmentGrids = {
         }[]
       ][];
       footer: string;
-      authorid: 'object';
+      authorid: any;
     }[];
 
     html: string;
