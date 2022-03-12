@@ -98,7 +98,7 @@ This is used to store the raw_responses from the api calls
 
 • **isAuthenticated**: `boolean`
 
-Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
+Whether or not the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 #### Defined in
 
@@ -110,7 +110,7 @@ Whether the [Edulink_API](Edulink_API.md) instance has been authenticated
 
 • **keepAlive**: `undefined` \| `Timeout`
 
-If this is true the server will be pinged every 5 minutes to keep the session alive
+If this is true, the server will be pinged every 5 minutes to keep the session alive
 
 #### Defined in
 
@@ -150,7 +150,7 @@ This is defined when [Edulink_API.Authenticate](Edulink_API.md#authenticate) is 
 
 | Name                 | Type      | Default value | Description                                                                                                                               |
 | :------------------- | :-------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| `param0`             | `Object`  | `undefined`   | The school_code, username and password to use to authenticate, if you don't know your school_code your school's postcode can also be used |
+| `param0`             | `Object`  | `undefined`   | The school_code, username and password to use to authenticate. If you don't know your school_code your school's postcode can also be used |
 | `param0.password`    | `string`  | `undefined`   | -                                                                                                                                         |
 | `param0.school_code` | `string`  | `undefined`   | -                                                                                                                                         |
 | `param0.username`    | `string`  | `undefined`   | -                                                                                                                                         |
