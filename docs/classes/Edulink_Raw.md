@@ -3,7 +3,7 @@
 # Class: Edulink_Raw
 
 This class houses all the raw requests to the Edulink API.
-Properties that the methods require need to initialized with the [Edulink_Raw.initialize](Edulink_Raw.md#initialize) method.
+Properties that the methods require need to be initialized with the [Edulink_Raw.initialize](Edulink_Raw.md#initialize) method.
 
 ## Table of contents
 
@@ -217,7 +217,7 @@ Returns the data from the `clubs` section of edulink
 
 | Name     | Type      | Default value | Description                                                                                                                         |
 | :------- | :-------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------- |
-| `member` | `boolean` | `true`        | If true clubs that the learner is a member of will be returned, if false clubs that the learner is not a member of will be returned |
+| `member` | `boolean` | `true`        | If true, clubs that the learner is a member of will be returned. If false, clubs that the learner is not a member of will be returned |
 
 #### Returns
 
@@ -357,7 +357,7 @@ A promise that resolves to the [Edulink_Login](../modules/Edulink_Raw_Response_T
 
 ▸ **Logout**(): `Promise`<[`Edulink_Logout`](../modules/Edulink_Raw_Response_Types.md#edulink_logout)\>
 
-Logs the user out of the school server, this will render most of the class useless as authentication is required for the methods to run
+Logs the user out of the school server. This will render most of the class useless as authentication is required for the methods to run
 
 #### Returns
 
@@ -393,7 +393,7 @@ A promise that resolves to the [Edulink_Personal](../modules/Edulink_Raw_Respons
 
 ▸ **Ping**(): `Promise`<[`Edulink_Ping`](../modules/Edulink_Raw_Response_Types.md#edulink_ping)\>
 
-Ping's the server to keep the session alive //TODO: See how long the default session is and how long it should be
+Pings the server to keep the session alive //TODO: See how long the default session is and how long it should be
 
 #### Returns
 
@@ -439,7 +439,7 @@ Returns information about the login options of the school as well as the school 
 
 `Promise`<[`Edulink_SchoolDetails`](../modules/Edulink_Raw_Response_Types.md#edulink_schooldetails)\>
 
-information about the login options of the school as well as the school name and id, see [Edulink_SchoolDetails](../modules/Edulink_Raw_Response_Types.md#edulink_schooldetails)
+Information about the login options of the school as well as the school name and id, see [Edulink_SchoolDetails](../modules/Edulink_Raw_Response_Types.md#edulink_schooldetails)
 
 #### Defined in
 
@@ -476,7 +476,7 @@ A promise that resolves to a response object that contains the school code and s
 
 ▸ **Status**(): `Promise`<[`Edulink_Status`](../modules/Edulink_Raw_Response_Types.md#edulink_status)\>
 
-Returns the current status of the user sign in as well as info about the user's upcoming whereabouts, see [Edulink_Status](../modules/Edulink_Raw_Response_Types.md#edulink_status)
+Returns the current status of the user signed in as well as info about the user's upcoming whereabouts, see [Edulink_Status](../modules/Edulink_Raw_Response_Types.md#edulink_status)
 
 #### Returns
 
@@ -500,7 +500,7 @@ Gets the timetable for the current user from a given date
 
 | Name   | Type     | Description                                                                                                                                                |
 | :----- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `date` | `string` | should be in format: YYYY-MM-DD, this is the start date of the range by default edulink will return 16 days of data //TODO: Fact check this is always true |
+| `date` | `string` | Should be in format: YYYY-MM-DD. This is the start date of the range, and by default, edulink will return 16 days of data //TODO: Fact check this is always true |
 
 #### Returns
 
