@@ -411,7 +411,7 @@ A promise that resolves to the [Edulink_Ping](../modules/Edulink_Raw_Response_Ty
 
 ▸ **RegisterCodes**(): `Promise`<[`Edulink_RegisterCodes`](../modules/Edulink_Raw_Response_Types.md#edulink_registercodes)\>
 
-TODO: Can't remeber what this is
+TODO: Can't remember what this is
 
 #### Returns
 
@@ -476,7 +476,7 @@ A promise that resolves to a response object that contains the school code and s
 
 ▸ **Status**(): `Promise`<[`Edulink_Status`](../modules/Edulink_Raw_Response_Types.md#edulink_status)\>
 
-Returns the current status of the user signed in as well as info about the user's upcoming whereabouts, see [Edulink_Status](../modules/Edulink_Raw_Response_Types.md#edulink_status)
+Returns the current status of the user sign in as well as info about the user's upcoming whereabouts, see [Edulink_Status](../modules/Edulink_Raw_Response_Types.md#edulink_status)
 
 #### Returns
 
