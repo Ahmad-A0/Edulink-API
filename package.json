@@ -1,11 +1,13 @@
 {
   "author": "Ahmad-A0",
   "name": "edulink-api",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "exports": "./build/index.js",
   "types": "build",
   "engines": {
@@ -29,6 +31,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "html-to-text": "^8.1.0",
     "typescript": "^4.5.4",
     "uuid": "^8.3.2"
   },
