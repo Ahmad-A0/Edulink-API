@@ -22,6 +22,7 @@
 - [Edulink_Exams](Edulink_Raw_Response_Types.md#edulink_exams)
 - [Edulink_ExternalLinks](Edulink_Raw_Response_Types.md#edulink_externallinks)
 - [Edulink_Homework](Edulink_Raw_Response_Types.md#edulink_homework)
+- [Edulink_HomeworkDetails](Edulink_Raw_Response_Types.md#edulink_homeworkdetails)
 - [Edulink_ICalendars](Edulink_Raw_Response_Types.md#edulink_icalendars)
 - [Edulink_Login](Edulink_Raw_Response_Types.md#edulink_login)
 - [Edulink_Logout](Edulink_Raw_Response_Types.md#edulink_logout)
@@ -68,7 +69,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
+[Raw_Edulink_Response_Types/Communicator_Inbox.ts:5](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Communicator_Inbox.ts#L5)
 
 ---
 
@@ -96,7 +97,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
+[Raw_Edulink_Response_Types/Communicator_Outbox.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Communicator_Outbox.ts#L1)
 
 ---
 
@@ -118,7 +119,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Achievement.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Achievement.ts#L1)
 
 ---
 
@@ -160,7 +161,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_AchievementBehaviourLookups.ts#L1)
 
 ---
 
@@ -170,19 +171,19 @@ Communicator Inbox
 
 #### Type declaration
 
-| Name                | Type                                                                                                                                                                                                                                                                    |
-| :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`                | `string`                                                                                                                                                                                                                                                                |
-| `jsonrpc`           | `string`                                                                                                                                                                                                                                                                |
-| `result`            | `Object`                                                                                                                                                                                                                                                                |
-| `result.assessment` | { `applies_this_year`: `boolean` ; `applies_to_year_id`: `string` ; `authorid`: `"object"` ; `footer`: `string` ; `header`: `string` ; `name`: `string` ; `resultstable`: [{ `content`: `string` ; `css`: `string` ; `name`: `string` ; `visible`: `boolean` }[]][] }[] |
-| `result.html`       | `string`                                                                                                                                                                                                                                                                |
-| `result.method`     | `string`                                                                                                                                                                                                                                                                |
-| `result.success`    | `boolean`                                                                                                                                                                                                                                                               |
+| Name                | Type                                                                                                                                                                                                                                                               |
+| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`                | `string`                                                                                                                                                                                                                                                           |
+| `jsonrpc`           | `string`                                                                                                                                                                                                                                                           |
+| `result`            | `Object`                                                                                                                                                                                                                                                           |
+| `result.assessment` | { `applies_this_year`: `boolean` ; `applies_to_year_id`: `string` ; `authorid`: `any` ; `footer`: `string` ; `header`: `string` ; `name`: `string` ; `resultstable`: [{ `content`: `string` ; `css`: `string` ; `name`: `string` ; `visible`: `boolean` }[]][] }[] |
+| `result.html`       | `string`                                                                                                                                                                                                                                                           |
+| `result.method`     | `string`                                                                                                                                                                                                                                                           |
+| `result.success`    | `boolean`                                                                                                                                                                                                                                                          |
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_AssessmentGrids.ts#L1)
 
 ---
 
@@ -215,7 +216,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Attendance.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Attendance.ts#L1)
 
 ---
 
@@ -225,28 +226,28 @@ Communicator Inbox
 
 #### Type declaration
 
-| Name                     | Type                                                                                                                                                                                                                                                                                                                                              |
-| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `id`                     | `string`                                                                                                                                                                                                                                                                                                                                          |
-| `jsonrpc`                | `string`                                                                                                                                                                                                                                                                                                                                          |
-| `result`                 | `Object`                                                                                                                                                                                                                                                                                                                                          |
-| `result.b4l`             | [{ `subject`: `string` ; `values`: { [key in "1" \| "2" \| "3" \| "4" \| "5" \| "6" \| "7" \| "8" \| "9" \| "-" \| "/"]?: number } }]                                                                                                                                                                                                             |
-| `result.behaviour`       | { `activity_id`: `number` ; `bullying_type_id`: `"object"` ; `comments`: `string` ; `date`: `string` ; `id`: `number` ; `lesson_information`: `string` ; `location_id`: `"object"` ; `points`: `number` ; `recorded`: { `date`: `string` ; `employee_id`: `string` } ; `status_id`: `number` ; `time_id`: `"object"` ; `type_ids`: `number`[] }[] |
-| `result.detentions`      | { `attended`: `string` ; `date`: `string` ; `description`: `string` ; `end_time`: `string` ; `id`: `number` ; `location`: `string` ; `non_attendance_reason`: `string` ; `start_time`: `string` }[]                                                                                                                                               |
-| `result.employees`       | { `forename`: `string` ; `id`: `string` ; `surname`: `string` ; `title`: `string` }[]                                                                                                                                                                                                                                                             |
-| `result.hide_fields`     | `string`[]                                                                                                                                                                                                                                                                                                                                        |
-| `result.method`          | `string`                                                                                                                                                                                                                                                                                                                                          |
-| `result.metrics`         | `Object`                                                                                                                                                                                                                                                                                                                                          |
-| `result.metrics.sspt`    | `number`                                                                                                                                                                                                                                                                                                                                          |
-| `result.metrics.sspt_us` | `number`                                                                                                                                                                                                                                                                                                                                          |
-| `result.metrics.st`      | `string`                                                                                                                                                                                                                                                                                                                                          |
-| `result.metrics.uniqid`  | `string`                                                                                                                                                                                                                                                                                                                                          |
-| `result.report_cards`    | { `active`: `boolean` ; `behaviour_incident_type_id`: `number` ; `comments`: `string` ; `current`: `boolean` ; `end_date`: `string` ; `id`: `number` ; `start_date`: `string` }[]                                                                                                                                                                 |
-| `result.success`         | `boolean`                                                                                                                                                                                                                                                                                                                                         |
+| Name                     | Type                                                                                                                                                                                                                                                                                                                               |
+| :----------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`                     | `string`                                                                                                                                                                                                                                                                                                                           |
+| `jsonrpc`                | `string`                                                                                                                                                                                                                                                                                                                           |
+| `result`                 | `Object`                                                                                                                                                                                                                                                                                                                           |
+| `result.b4l`             | [{ `subject`: `string` ; `values`: { [key in "1" \| "2" \| "3" \| "4" \| "5" \| "6" \| "7" \| "8" \| "9" \| "-" \| "/"]?: number } }]                                                                                                                                                                                              |
+| `result.behaviour`       | { `activity_id`: `number` ; `bullying_type_id`: `any` ; `comments`: `string` ; `date`: `string` ; `id`: `number` ; `lesson_information`: `string` ; `location_id`: `any` ; `points`: `number` ; `recorded`: { `date`: `string` ; `employee_id`: `string` } ; `status_id`: `number` ; `time_id`: `any` ; `type_ids`: `number`[] }[] |
+| `result.detentions`      | { `attended`: `string` ; `date`: `string` ; `description`: `string` ; `end_time`: `string` ; `id`: `number` ; `location`: `string` ; `non_attendance_reason`: `string` ; `start_time`: `string` }[]                                                                                                                                |
+| `result.employees`       | { `forename`: `string` ; `id`: `string` ; `surname`: `string` ; `title`: `string` }[]                                                                                                                                                                                                                                              |
+| `result.hide_fields`     | `string`[]                                                                                                                                                                                                                                                                                                                         |
+| `result.method`          | `string`                                                                                                                                                                                                                                                                                                                           |
+| `result.metrics`         | `Object`                                                                                                                                                                                                                                                                                                                           |
+| `result.metrics.sspt`    | `number`                                                                                                                                                                                                                                                                                                                           |
+| `result.metrics.sspt_us` | `number`                                                                                                                                                                                                                                                                                                                           |
+| `result.metrics.st`      | `string`                                                                                                                                                                                                                                                                                                                           |
+| `result.metrics.uniqid`  | `string`                                                                                                                                                                                                                                                                                                                           |
+| `result.report_cards`    | { `active`: `boolean` ; `behaviour_incident_type_id`: `number` ; `comments`: `string` ; `current`: `boolean` ; `end_date`: `string` ; `id`: `number` ; `start_date`: `string` }[]                                                                                                                                                  |
+| `result.success`         | `boolean`                                                                                                                                                                                                                                                                                                                          |
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Behaviour.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Behaviour.ts#L1)
 
 ---
 
@@ -267,7 +268,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Calendar.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Calendar.ts#L1)
 
 ---
 
@@ -289,7 +290,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Catering.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Catering.ts#L1)
 
 ---
 
@@ -314,7 +315,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Clubs.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Clubs.ts#L1)
 
 ---
 
@@ -364,7 +365,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_DataCollectionLookups.ts#L1)
 
 ---
 
@@ -512,7 +513,7 @@ Communicator Inbox
 | `result.fields.preferred_surname.type`          | `string`                                                                                                                                                                                                                                                         |
 | `result.fields.religion_id`                     | `Object`                                                                                                                                                                                                                                                         |
 | `result.fields.religion_id.category`            | `string`                                                                                                                                                                                                                                                         |
-| `result.fields.religion_id.data`                | `"object"`                                                                                                                                                                                                                                                       |
+| `result.fields.religion_id.data`                | `any`                                                                                                                                                                                                                                                            |
 | `result.fields.religion_id.in_review`           | `boolean`                                                                                                                                                                                                                                                        |
 | `result.fields.religion_id.label`               | `string`                                                                                                                                                                                                                                                         |
 | `result.fields.religion_id.lookup_key`          | `string`                                                                                                                                                                                                                                                         |
@@ -560,7 +561,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_DataCollectionValues.ts#L1)
 
 ---
 
@@ -581,7 +582,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Documents.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Documents.ts#L1)
 
 ---
 
@@ -612,7 +613,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Exams.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Exams.ts#L1)
 
 ---
 
@@ -637,7 +638,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_ExternalLinks.ts#L1)
 
 ---
 
@@ -655,8 +656,8 @@ Communicator Inbox
 | `result.error?`           | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `result.hidden_fields`    | []                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `result.homework`         | `Object`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `result.homework.current` | { `activity`: `string` ; `available_date`: `string` ; `cloneable`: `boolean` ; `completed`: `boolean` ; `deletable`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_reminder`: `string` ; `due_text`: `string` ; `icon`: `string` ; `id`: `number` ; `set_by`: `string` ; `source`: `string` ; `status`: `string` ; `subject`: `string` }[]                                                                                                                                                                                                                                   |
-| `result.homework.past`    | { `activity`: `string` ; `available_date`: `string` ; `cloneable`: `boolean` ; `completed`: `boolean` ; `deletable`: `boolean` ; `description`: `string` ; `due_date`: `string` ; `due_reminder`: `string` ; `due_text`: `string` ; `icon`: `string` ; `id`: `number` ; `set_by`: `string` ; `source`: `string` ; `status`: `string` ; `subject`: `string` }[]                                                                                                                                                                                                                                   |
+| `result.homework.current` | `Edulink_Homewok_Single`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `result.homework.past`    | `Edulink_Homewok_Single`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `result.homework.report`  | { `group_id`: `string` ; `learners`: { `completion_percent`: `number` ; `homeworks`: { `activity`: `string` ; `attachments`: [] ; `available_date`: `string` ; `cloneable`: `boolean` ; `completed`: `boolean` ; `deletable`: `boolean` ; `due_date`: `string` ; `due_text`: `string` ; `format`: `number` ; `id`: `number` ; `set_by`: `string` ; `source`: `string` ; `subject`: `string` ; `subject_id`: `number` }[] ; `homeworks_complete`: `number` ; `homeworks_count`: `number` ; `homeworks_number`: `number` ; `learner_id`: `string` }[] ; `name`: `string` ; `subject`: `string` }[] |
 | `result.method`           | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `result.metrics`          | `Object`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -666,7 +667,45 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Homework.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Homework.ts:19](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Homework.ts#L19)
+
+---
+
+### Edulink_HomeworkDetails
+
+Ƭ **Edulink_HomeworkDetails**: `Object`
+
+#### Type declaration
+
+| Name                             | Type      |
+| :------------------------------- | :-------- |
+| `id`                             | `string`  |
+| `jsonrpc`                        | `string`  |
+| `result`                         | `Object`  |
+| `result.homework`                | `Object`  |
+| `result.homework.activity`       | `string`  |
+| `result.homework.available_date` | `string`  |
+| `result.homework.description`    | `string`  |
+| `result.homework.due_date`       | `string`  |
+| `result.homework.due_reminder`   | `any`     |
+| `result.homework.duration`       | `any`     |
+| `result.homework.format`         | `number`  |
+| `result.homework.id`             | `string`  |
+| `result.homework.owner_id`       | `string`  |
+| `result.homework.subject`        | `string`  |
+| `result.homework.user_type`      | `string`  |
+| `result.method`                  | `string`  |
+| `result.metrics`                 | `Object`  |
+| `result.metrics.be`              | `string`  |
+| `result.metrics.sspt`            | `number`  |
+| `result.metrics.sspt_us`         | `number`  |
+| `result.metrics.st`              | `string`  |
+| `result.metrics.uniqid`          | `string`  |
+| `result.success`                 | `boolean` |
+
+#### Defined in
+
+[Raw_Edulink_Response_Types/Edulink_HomeworkDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_HomeworkDetails.ts#L1)
 
 ---
 
@@ -693,7 +732,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_ICalendars.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_ICalendars.ts#L1)
 
 ---
 
@@ -837,14 +876,14 @@ Communicator Inbox
 | `result.user.id`                                                                      | `string`                                                                                                               |
 | `result.user.remember_password_permitted`                                             | `boolean`                                                                                                              |
 | `result.user.surname`                                                                 | `string`                                                                                                               |
-| `result.user.title`                                                                   | `"object"`                                                                                                             |
+| `result.user.title`                                                                   | `any`                                                                                                                  |
 | `result.user.types`                                                                   | `string`[]                                                                                                             |
 | `result.user.username`                                                                | `string`                                                                                                               |
 | `result.user.year_group_id`                                                           | `string`                                                                                                               |
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Login.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Login.ts#L1)
 
 ---
 
@@ -864,7 +903,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Logout.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Logout.ts#L1)
 
 ---
 
@@ -889,7 +928,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Noticeboard.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Noticeboard.ts#L1)
 
 ---
 
@@ -956,7 +995,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Personal.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Personal.ts#L1)
 
 ---
 
@@ -982,7 +1021,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Ping.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Ping.ts#L1)
 
 ---
 
@@ -1019,7 +1058,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_RegisterCodes.ts#L1)
 
 ---
 
@@ -1054,7 +1093,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_SchoolDetails.ts#L1)
 
 ---
 
@@ -1114,7 +1153,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Status.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Status.ts#L1)
 
 ---
 
@@ -1140,7 +1179,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_TeacherPhotos.ts#L1)
 
 ---
 
@@ -1167,7 +1206,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L40)
 
 ---
 
@@ -1188,7 +1227,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:31](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L31)
 
 ---
 
@@ -1220,7 +1259,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:8](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L8)
 
 ---
 
@@ -1239,7 +1278,7 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
+[Raw_Edulink_Response_Types/Edulink_Timetable.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/Edulink_Timetable.ts#L1)
 
 ---
 
@@ -1262,4 +1301,4 @@ Communicator Inbox
 
 #### Defined in
 
-[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/5bb521f/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)
+[Raw_Edulink_Response_Types/School_FromCode.ts:1](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/4946bbe/src/Raw_Edulink_Response_Types/School_FromCode.ts#L1)

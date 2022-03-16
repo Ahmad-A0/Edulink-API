@@ -99,7 +99,9 @@ console.log(latest_homework);
 ```javascript
 import Edulink_API from 'edulink-api';
 
-const edulink_api = await Edulink_API({
+const edulink_api = new Edulink_API();
+
+await edulink_api.authenticate({
   school_code: 'your_school_name',
   username: 'your_username',
   password: 'your_password',

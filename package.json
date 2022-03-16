@@ -5,9 +5,7 @@
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",
-  "files": [
-    "build"
-  ],
+  "files": ["build"],
   "exports": "./build/index.js",
   "types": "build",
   "engines": {
