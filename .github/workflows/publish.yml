@@ -30,6 +30,7 @@ jobs:
       - name: 🚀 publish
         run: |
           npm i
+          npm run release-prep
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
