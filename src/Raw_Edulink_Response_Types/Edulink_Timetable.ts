@@ -32,7 +32,8 @@ type Edulink_Timetable_Day = {
   id: number;
   date: string;
   name: string;
-  original_name: string;
+  cycle_day_id?: number;
+  original_name?: string;
   is_current: boolean;
   periods: Edulink_Timetable_Period[];
   lessons: Edulink_Timetable_Lesson[];
