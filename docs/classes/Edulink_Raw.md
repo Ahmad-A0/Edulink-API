@@ -68,7 +68,7 @@ This houses the authentication bearer
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:50](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L50)
+[Raw_Edulink_Requests/Edulink_Raw.ts:50](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L50)
 
 ---
 
@@ -80,7 +80,7 @@ The ID of the current signed in user
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L40)
+[Raw_Edulink_Requests/Edulink_Raw.ts:40](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L40)
 
 ---
 
@@ -92,7 +92,7 @@ The base server that requests are made to
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:45](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L45)
+[Raw_Edulink_Requests/Edulink_Raw.ts:45](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L45)
 
 ## Accessors
 
@@ -114,7 +114,7 @@ This returns some fields needed in the data section of the other requests
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:74](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L74)
+[Raw_Edulink_Requests/Edulink_Raw.ts:74](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L74)
 
 ## Methods
 
@@ -132,7 +132,7 @@ A promise that resolves to the [Edulink_Achievement](../modules/Edulink_Raw_Resp
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:250](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L250)
+[Raw_Edulink_Requests/Edulink_Raw.ts:250](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L250)
 
 ---
 
@@ -150,7 +150,7 @@ A promise that resolves to the [Edulink_AchievementBehaviourLookups](../modules/
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:198](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L198)
+[Raw_Edulink_Requests/Edulink_Raw.ts:198](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L198)
 
 ---
 
@@ -168,7 +168,7 @@ A promise that resolves to the [Edulink_Attendance](../modules/Edulink_Raw_Respo
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:277](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L277)
+[Raw_Edulink_Requests/Edulink_Raw.ts:277](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L277)
 
 ---
 
@@ -186,7 +186,7 @@ A promise that resolves to the [Edulink_Behaviour](../modules/Edulink_Raw_Respon
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:170](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L170)
+[Raw_Edulink_Requests/Edulink_Raw.ts:170](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L170)
 
 ---
 
@@ -204,7 +204,7 @@ A promise that resolves to the [Edulink_Catering](../modules/Edulink_Raw_Respons
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:305](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L305)
+[Raw_Edulink_Requests/Edulink_Raw.ts:305](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L305)
 
 ---
 
@@ -228,7 +228,7 @@ A promise that resolves to the [Edulink_Clubs](../modules/Edulink_Raw_Response_T
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:460](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L460)
+[Raw_Edulink_Requests/Edulink_Raw.ts:460](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L460)
 
 ---
 
@@ -246,7 +246,7 @@ A promise that resolves to the [Edulink_Documents](../modules/Edulink_Raw_Respon
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:116](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L116)
+[Raw_Edulink_Requests/Edulink_Raw.ts:116](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L116)
 
 ---
 
@@ -264,7 +264,7 @@ A promise that resolves to the [Edulink_Exams](../modules/Edulink_Raw_Response_T
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:143](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L143)
+[Raw_Edulink_Requests/Edulink_Raw.ts:143](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L143)
 
 ---
 
@@ -282,7 +282,7 @@ A promise that resolves to the [Edulink_ExternalLinks](../modules/Edulink_Raw_Re
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:434](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L434)
+[Raw_Edulink_Requests/Edulink_Raw.ts:434](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L434)
 
 ---
 
@@ -300,7 +300,7 @@ A promise that resolves to the [Edulink_Homework](../modules/Edulink_Raw_Respons
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:332](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L332)
+[Raw_Edulink_Requests/Edulink_Raw.ts:332](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L332)
 
 ---
 
@@ -326,7 +326,7 @@ Change the completion status of a homework
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:361](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L361)
+[Raw_Edulink_Requests/Edulink_Raw.ts:361](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L361)
 
 ---
 
@@ -351,7 +351,7 @@ A promise that resolves to the [Edulink_HomeworkDetails](../modules/Edulink_Raw_
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:400](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L400)
+[Raw_Edulink_Requests/Edulink_Raw.ts:400](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L400)
 
 ---
 
@@ -376,7 +376,7 @@ A promise that resolves to the [Edulink_Login](../modules/Edulink_Raw_Response_T
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:624](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L624)
+[Raw_Edulink_Requests/Edulink_Raw.ts:624](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L624)
 
 ---
 
@@ -394,7 +394,7 @@ A promise that resolves to the [Edulink_Logout](../modules/Edulink_Raw_Response_
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:659](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L659)
+[Raw_Edulink_Requests/Edulink_Raw.ts:659](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L659)
 
 ---
 
@@ -412,7 +412,7 @@ A promise that resolves to the [Edulink_Personal](../modules/Edulink_Raw_Respons
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:488](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L488)
+[Raw_Edulink_Requests/Edulink_Raw.ts:488](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L488)
 
 ---
 
@@ -430,7 +430,7 @@ A promise that resolves to the [Edulink_Ping](../modules/Edulink_Raw_Response_Ty
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:684](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L684)
+[Raw_Edulink_Requests/Edulink_Raw.ts:684](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L684)
 
 ---
 
@@ -446,7 +446,7 @@ TODO: Can't remeber what this is
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:225](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L225)
+[Raw_Edulink_Requests/Edulink_Raw.ts:225](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L225)
 
 ---
 
@@ -470,7 +470,7 @@ information about the login options of the school as well as the school name and
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:569](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L569)
+[Raw_Edulink_Requests/Edulink_Raw.ts:569](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L569)
 
 ---
 
@@ -495,7 +495,7 @@ A promise that resolves to a response object that contains the school code and s
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:599](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L599)
+[Raw_Edulink_Requests/Edulink_Raw.ts:599](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L599)
 
 ---
 
@@ -513,7 +513,7 @@ A promise that resolves to the [Edulink_Status](../modules/Edulink_Raw_Response_
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:515](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L515)
+[Raw_Edulink_Requests/Edulink_Raw.ts:515](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L515)
 
 ---
 
@@ -537,7 +537,7 @@ A promise that resolves to the [Edulink_Attendance](../modules/Edulink_Raw_Respo
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:88](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L88)
+[Raw_Edulink_Requests/Edulink_Raw.ts:88](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L88)
 
 ---
 
@@ -559,4 +559,4 @@ A promise that resolves to the [Edulink_Attendance](../modules/Edulink_Raw_Respo
 
 #### Defined in
 
-[Raw_Edulink_Requests/Edulink_Raw.ts:58](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/6099b76/src/Raw_Edulink_Requests/Edulink_Raw.ts#L58)
+[Raw_Edulink_Requests/Edulink_Raw.ts:58](https://github.com/Ahmad-A0/Overnet-Edulink-API/blob/fd6842b/src/Raw_Edulink_Requests/Edulink_Raw.ts#L58)
