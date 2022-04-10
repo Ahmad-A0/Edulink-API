@@ -5,7 +5,9 @@
   "description": "An unofficial API for interacting with OvernetData's Edulink service",
   "license": "MIT",
   "type": "module",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "exports": "./build/index.js",
   "types": "build",
   "engines": {
@@ -31,13 +33,16 @@
     "axios": "^0.24.0",
     "html-to-text": "^8.1.0",
     "typescript": "^4.5.4",
-    "uuid": "^8.3.2"
+    "url": "^0.11.0",
+    "uuid": "^8.3.2",
+    "whatwg-url": "^11.0.0"
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/html-to-text": "^8.1.0",
     "@types/node": "^17.0.8",
     "@types/uuid": "^8.3.4",
+    "@types/whatwg-url": "^8.2.1",
     "del-cli": "^4.0.1",
     "dotenv": "^10.0.0",
     "prettier": "^2.5.1",
