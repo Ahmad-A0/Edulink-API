@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { URL } from 'url';
+import { URL } from 'whatwg-url';
 import { v4 } from 'uuid';
 
 export function roughType(object: any) {
